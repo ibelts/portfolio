@@ -162,8 +162,8 @@ img.portrait {
   justify-content: center;
   align-items: flex-end;
 }
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-------
 // ------------- MIXINS ------------- //
 @mixin transition($time, $property: all, $easing: ease-in) {
     transition: $property $time $easing;
