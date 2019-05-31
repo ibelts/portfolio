@@ -1,24 +1,142 @@
 <!DOCTYPE html>
-<html class="fsvs" lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio | Inna Beltcova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
   <script src="menu.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
-  <script src="js.js" type="text/javascript"></script>
 </head>
 <body>
-  <div class="container">
-    <div id="home" class="background">
-      <div class="content-wrapper">
-        <article class="na"><nav class="flex-container">
+  <div id="pagepiling">
+    <div class="section" id="section1">
+    <div class="wrapper">
+      <article class="na">
+        <div class="flex-container">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#section1">Homepage</a>
+              <a href="#section2">Work</a>
+              <a href="#section3">About</a>
+              <a href="#section5">Contact</a>
+            </div>
+          </div>
+          <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
+          <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
+          </div>
+        </div>
+      </article>
+      <img class="portrait" src="images/my_photo_homepage.png" height="213px" weight="214" alt="Photo of Inna Beltcova">
+      <div class="intro"><h3>Hi! Thanks for stopping by.<br>
+        <span class="introBig">My name is Inna Beltcova and I am a <span class="highlight">UX designer</span> located in Cary, NC.</span></h3></div>
+        <div class="vl3"></div>
+        <article class="so">
+          <div class="social">
+            <a class="link" href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_small.png" ></a>
+            <a class="drib" href="https://dribbble.com/InnaB"><img src="images/dribbble_small.png"></a>
+            <a class="git" href="https://github.com/InnaBeltcova"><img src="images/github_small.png"></a>
+          </div>
+        </article>
+        <div class="vl4"></div>
+        <img class="arr" src="images/arrow.png" alt="Pointing down arrow">
+        <div class="vl1"></div>
+        <div class="rotate"><p>Portfolio</p></div>
+        <div class="vl2"></div>
+      </div>
+      </div>
+      <div class="section" id="section2">
+        <div class="wrapper">
+        <article class="na">
+          <div class="flex-container">
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="#home">Homepage</a>
+                <a href="#projects">Work</a>
+                <a href="#des">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+            <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/white_hamburger_menu.png" height="25px" width="40px"></span>
+            <div class="logo"><a href="#home"><img src="images/my_logo_black.png" height= "98px" width="98px"></a>
+            </div>
+          </div>
+        </article>
+        <h1 class="title">Serious Drive</h1>
+        <h4 class="subtitle">A content management system for professional designers</h4>
+        <img class="caseHome" src="images/sd_img.png" >
+        <button class="btnCase" type="button">Case study</button>
+      </div>
+    </div>
+      <div class="section" id="section3">
+      <div class="wrapper">
+        <article class="na">
+          <div class="flex-container">
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="#home">Homepage</a>
+                <a href="#projects">Work</a>
+                <a href="#des">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+            <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
+            <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
+            </div>
+          </div>
+        </article>
+        <article class="uxAbout">
+          <h3>I am a UX designer with broad experience in diverse industries such as Psychology, recruitment, print design, and academic research.</h3>
+        </article>
+        <article class="psyAbout">
+          <h2 class="redHead">Psychology </h2>
+          <p class="psyRes">Behavioral science has always been a source of inspiration for me. My Master's degree in Psychology (diploma with honors) gave me a solid theoretical foundation in understanding people’s behavior as well as the deep reasoning behind it. This is particularly helpful in the user research phase of the design process and during user tests because UX is all about empathy and understanding people.
+          </p>
+        </article>
+        <article class="resAbout">
+          <h2 class="redHead">Research</h2>
+          <p class="psyRes">There is always a fair amount of research behind every successful digital product. Working as a Research Associate at the Kazan State University (Russia) taught me the importance of following a proper research process and always testing hypotheses.  Being a UX designer with an academic background allows me to bring a solid work structure and logic to every project.
+          </p>
+        </article>
+      </div>
+    </div>
+      <div class="section" id="section4">
+      <div class="wrapper">
+        <article class="na">
+          <div class="flex-container">
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="#home">Homepage</a>
+                <a href="#projects">Work</a>
+                <a href="#des">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+            <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
+            <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
+            </div>
+          </div>
+        </article>
+          <h2 class="designA">Design</h2>
+          <p class="son1">When we moved to the US in 2014, my son was four and didn't speak any English.
+            Desperately wanting to help him I started to write, design and publish dual-language books, simultaneously working on digital products. This sparked an interest in UX.</p>
+          <p class="son2">I joined the Interaction Design Foundation and started an apprenticeship program at Bloc. As a UX designer, I’m committed to creating solutions that make people’s lives easier.
+            My skill set and diverse experience came together in UX like the pieces of a puzzle.
+            But enough about me, let’s talk about you. Connect with me here.</p>
+        </div>
+    </div>
+    <div class="section" id="section4">
+    <div class="wrapper">
+      <article class="na">
+        <div class="flex-container">
           <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
@@ -27,133 +145,35 @@
               <a href="#des">About</a>
               <a href="#contact">Contact</a>
             </div>
-        </div>
+          </div>
           <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
           <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
           </div>
         </div>
-        <img class="portrait" src="images/my_photo_homepage.png" height="213px" weight="214" alt="Photo of Inna Beltcova">
-        <div class="intro"><h3>Hi! Thanks for stopping by.<br>
-          <span class="introBig">My name is Inna Beltcova and I am a UX designer located in Cary, NC.</span></h3></div>
-          <div class="vl3"></div>
-          <div class="so">
-            <article class="social">
-              <a class="link" href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_small.png" ></a>
-              <a class="drib" href="https://dribbble.com/InnaB"><img src="images/dribbble_small.png"></a>
-              <a class="git" href="https://github.com/InnaBeltcova"><img src="images/github_small.png"></a>
-            </article>
-          </div>
-          <div class="vl4"></div>
-          <img class="arr" src="images/arrow.png" alt="Pointing down arrow">
-          <div class="vl1"></div>
-          <div class="rotate"><p>Portfolio</p></div>
-          <div class="vl2"></div>
-        </div>
-      </div>
-      <div id="projects" class="background">
-        <div class="content-wrapper">
-          <nav class="flex-container">
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#home">Homepage</a>
-                <a href="#projects">Work</a>
-                <a href="#des">About</a>
-                <a href="#contact">Contact</a>
-              </div>
-            </div>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/white_hamburger_menu.png" height="25px" width="40px"></span>
-            <div class="logo"><a href="#home"><img src="images/my_logo_black.png" height= "98px" width="98px"></a>
-            </div>
-          </nav>
-          <h1>Serious Drive</h1>
-          <h4>A content management system for professional designers</h4>
-          <img src="images/sd_img.png" width= "829px" height= "652px">
-          <button type="button">Case study</button>
-        </div>
-      </div>
-      <div id="des" class="background">
-        <div class="content-wrapper">
-          <nav class="flex-container">
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#home">Homepage</a>
-                <a href="#projects">Work</a>
-                <a href="#des">About</a>
-                <a href="#contact">Contact</a>
-              </div>
-            </div>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
-            <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
-            </div>
-          </nav>
-          <article class="uxAbout">
-            <h3>I am a UX designer with broad experience in diverse industries such as Psychology, recruitment, print design, and academic research.</h3>
-          </article>
-          <article class="psyAbout">
-            <h2 class="redHead">Psychology </h2>
-            <p class="psyRes">Behavioral science has always been a source of inspiration for me. My Master's degree in Psychology (diploma with honors) gave me a solid theoretical foundation in understanding people’s behavior as well as the deep reasoning behind it. This is particularly helpful in the user research phase of the design process and during user tests because UX is all about empathy and understanding people.
-            </p>
-          </article>
-          <article class="resAbout">
-            <h2 class="redHead">Research  </h2>
-            <p class="psyRes">There is always a fair amount of research behind every successful digital product. Working as a Research Associate at the Kazan State University (Russia) taught me the importance of following a proper research process and always testing hypotheses.  Being a UX designer with an academic background allows me to bring a solid work structure and logic to every project.
-            </p>
-          </article>
-        </div>
-      </div>
-      <div class="background">
-        <div class="content-wrapper">
-          <nav class="flex-container">
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#home">Homepage</a>
-                <a href="#projects">Work</a>
-                <a href="#des">About</a>
-                <a href="#contact">Contact</a>
-              </div>
-            </div>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
-            <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
-            </div>
-          </nav>
-          <article class="designAbout">
-            <h2>Design</h2>
-            <p>When we moved to the US in 2014, my son was four and didn't speak any English. Desperately wanting to help him I started to write, design and publish dual-language books, simultaneously working on digital products. This sparked an interest in UX. I joined the Interaction Design Foundation and started an apprenticeship program at Bloc. As a UX designer, I’m committed to creating solutions that make people’s lives easier.
-              My skill set and diverse experience came together in UX like the pieces of a puzzle.
-              But enough about me, let’s talk about you. Connect with me here.
-            </p>
-          </article>
-        </div>
-      </div>
-      <div id="contact" class="background">
-        <div class="content-wrapper">
-          <nav>
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#home">Homepage</a>
-                <a href="#projects">Work</a>
-                <a href="#des">About</a>
-                <a href="#contact">Contact</a>
-              </div>
-            </div>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
-            <a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
-          </nav>
-          <h2>Please feel free to contact me.</h2>
-          <a href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_big.png" ></a>
-          <a href="https://github.com/InnaBeltcova"><img src="images/github_big.png"></a>
-          <a href="https://dribbble.com/InnaB"><img src="images/dribbble_big.png"></a>
-          <form action="/action_page.php">
-            <input type="text" name="email" value="Your email address"><br>
-            <input type="text" name="message" value="Your message"><br><br>
-            <input type="submit" value="Send">
-          </form>
-        </div>
-      </div>
+      </article>
+      <h2 class="con">Please feel free to contact me.</h2>
+      <article class="socC">
+        <div class="socialC">
+         <a href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_big.png" ></a>
+         <a href="https://github.com/InnaBeltcova"><img src="images/github_big.png"></a>
+         <a href="https://dribbble.com/InnaB"><img src="images/dribbble_big.png"></a>
+       </div>
+     </article>
+         <form action="/action_page.php">
+           <input type="text" name="email" value="Your email address"><br>
+           <input type="text" name="message" value="Your message"><br><br>
+           <input type="submit" value="Send">
+         </form>
     </div>
-  </body>
-  </html>
+  </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script scr="jquery.min.js"></script>
+  <script src="jquery.pagepiling.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#pagepiling').pagepiling();
+    });
+  </script>
+</body>
+</html>
