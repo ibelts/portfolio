@@ -6,10 +6,11 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+  <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="menu.css">
   <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+
   <script src="menu.js"></script>
 </head>
 <body>
@@ -57,14 +58,14 @@
             <div id="myNav" class="overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <div class="overlay-content">
-                <a href="#home">Homepage</a>
-                <a href="#projects">Work</a>
-                <a href="#des">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#section1">Homepage</a>
+                <a href="#section2">Work</a>
+                <a href="#section3">About</a>
+                <a href="#section5">Contact</a>
               </div>
             </div>
             <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/white_hamburger_menu.png" height="25px" width="40px"></span>
-            <div class="logo"><a href="#home"><img src="images/my_logo_black.png" height= "98px" width="98px"></a>
+            <div class="logo"><a href="#section1"><img src="images/my_logo_black.png" height= "98px" width="98px"></a>
             </div>
           </div>
         </article>
@@ -81,92 +82,59 @@
             <div id="myNav" class="overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <div class="overlay-content">
-                <a href="#home">Homepage</a>
-                <a href="#projects">Work</a>
-                <a href="#des">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#section1">Homepage</a>
+                <a href="#section2">Work</a>
+                <a href="#section3">About</a>
+                <a href="#section5">Contact</a>
               </div>
             </div>
             <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
-            <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
+            <div class="logo"><a href="#section1"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
             </div>
           </div>
         </article>
         <article class="uxAbout">
           <h3>I am a UX designer with broad experience in diverse industries such as Psychology, recruitment, print design, and academic research.</h3>
         </article>
-        <article class="psyAbout">
-          <h2 class="redHead">Psychology </h2>
-          <p class="psyRes">Behavioral science has always been a source of inspiration for me. My Master's degree in Psychology (diploma with honors) gave me a solid theoretical foundation in understanding people’s behavior as well as the deep reasoning behind it. This is particularly helpful in the user research phase of the design process and during user tests because UX is all about empathy and understanding people.
+        <section class="whole">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')"><h2 class="redHead">Psychology</h2></button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')"><h2 class="redHead">Research</h2></button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')"><h2 class="redHead">Design</h2></button>
+        </div>
+          <div id="London" class="tabcontent">
+           <p class="psy">Behavioral science has always been a source of inspiration for me. My Master's degree in Psychology (diploma with honors) gave me a solid theoretical
+            foundation in understanding people’s behavior as well as the deep reasoning behind it. This is particularly helpful in the user research phase of the design process
+            and during user tests because UX is all about empathy and understanding people.
           </p>
-        </article>
-        <article class="resAbout">
-          <h2 class="redHead">Research</h2>
-          <p class="psyRes">There is always a fair amount of research behind every successful digital product. Working as a Research Associate at the Kazan State University (Russia) taught me the importance of following a proper research process and always testing hypotheses.  Being a UX designer with an academic background allows me to bring a solid work structure and logic to every project.
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <p class="psy">There is always a fair amount of research behind every successful digital product. Working as a Research Associate at the Kazan State University (Russia)
+            taught me the importance of following a proper research process and always testing hypotheses.  Being a UX designer with an academic background allows me to bring a solid
+            work structure and logic to every project.
           </p>
-        </article>
-      </div>
-    </div>
-      <div class="section" id="section4">
-      <div class="wrapper">
-        <article class="na">
-          <div class="flex-container">
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#home">Homepage</a>
-                <a href="#projects">Work</a>
-                <a href="#des">About</a>
-                <a href="#contact">Contact</a>
-              </div>
-            </div>
-            <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
-            <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
-            </div>
-          </div>
-        </article>
-          <h2 class="designA">Design</h2>
-          <p class="son1">When we moved to the US in 2014, my son was four and didn't speak any English.
-            Desperately wanting to help him I started to write, design and publish dual-language books, simultaneously working on digital products. This sparked an interest in UX.</p>
-          <p class="son2">I joined the Interaction Design Foundation and started an apprenticeship program at Bloc. As a UX designer, I’m committed to creating solutions that make people’s lives easier.
+        </div>
+        <div id="Tokyo"class="tabcontent">
+          <p class="psy">When we moved to the US in 2014, my son was four and didn't speak any English.
+            Desperately wanting to help him I started to write, design and publish dual-language books, simultaneously working on digital products. This sparked an interest in UX.
+          I joined the Interaction Design Foundation and started an apprenticeship program at Bloc. As a UX designer, I’m committed to creating solutions that make people’s lives easier.
             My skill set and diverse experience came together in UX like the pieces of a puzzle.
             But enough about me, let’s talk about you. Connect with me here.</p>
         </div>
-    </div>
-    <div class="section" id="section4">
-    <div class="wrapper">
-      <article class="na">
-        <div class="flex-container">
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="#home">Homepage</a>
-              <a href="#projects">Work</a>
-              <a href="#des">About</a>
-              <a href="#contact">Contact</a>
-            </div>
-          </div>
-          <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
-          <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
-          </div>
-        </div>
-      </article>
-      <h2 class="con">Please feel free to contact me.</h2>
+      </section>
+
       <article class="socC">
         <div class="socialC">
+         <a href="mailto:innabeltcova@gmail.com"><img src="images/envelope.png"></a>
          <a href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_big.png" ></a>
          <a href="https://github.com/InnaBeltcova"><img src="images/github_big.png"></a>
          <a href="https://dribbble.com/InnaB"><img src="images/dribbble_big.png"></a>
        </div>
-     </article>
-         <form action="/action_page.php">
-           <input type="text" name="email" value="Your email address"><br>
-           <input type="text" name="message" value="Your message"><br><br>
-           <input type="submit" value="Send">
-         </form>
+      </article>
+    </div>
     </div>
   </div>
-    </div>
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <script scr="jquery.min.js"></script>
   <script src="jquery.pagepiling.js"></script>
@@ -175,5 +143,20 @@
     $('#pagepiling').pagepiling();
     });
   </script>
+  <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 </body>
 </html>
