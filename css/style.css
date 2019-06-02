@@ -382,8 +382,11 @@ padding-left: 10px;
     height: auto;
   }
   img.portrait {
-    grid-column: 3 / 6;
+    grid-column: 2 / 6;
     grid-row: 2 / 7;
+    height: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .intro {
@@ -467,7 +470,6 @@ padding-left: 10px;
   grid-column: 1 / 7;
   grid-row: 4 / 7;
 }
-
 .uxAbout {
   grid-column: 1 / 7;
   grid-row: 2 / 6;

@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-  <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
 </head>
 <body>
   <section id="pagepiling">
@@ -21,7 +20,7 @@
               <li data-menuanchor="page2"><a href="#page2"><h5 class="m2">Work</h5></a></li>
               <li data-menuanchor="page3" class="active"><a href="#page3"><h5 class="m3">About</h5></a></li>
             </ul>
-            <div class="logo"><a href="#home"><img id="log" src="images/logo_grey.png"></a>
+            <div class="logo"><a href="#page1"><img id="log" src="images/logo_grey.png"></a>
             </div>
           </div>
         </article>
@@ -52,7 +51,7 @@
                 <li class="m2"data-menuanchor="page2"><a href="#page2"><h5 class="m5">Work</h5></a></li>
                 <li class="m3" data-menuanchor="page3" class="active"><a href="#page3"><h5 class="m6">About</h5></a></li>
               </ul>
-              <div class="logo"><a href="#home"><img id="log" src="images/my_logo_black.png"></a>
+              <div class="logo"><a href="#page1"><img id="log" src="images/my_logo_black.png"></a>
               </div>
             </div>
           </article>
@@ -70,7 +69,7 @@
                 <li class="m2"data-menuanchor="page2"><a href="#page2"><h5 class="m2">Work</h5></a></li>
                 <li class="m3" data-menuanchor="page3" class="active"><a href="#page3"><h5 class="m3">About</h5></a></li>
               </ul>
-              <div class="logo"><a href="#home"><img id="log" src="images/logo_grey.png"></a>
+              <div class="logo"><a href="#page1"><img id="log" src="images/logo_grey.png"></a>
               </div>
             </div>
           </article>
@@ -118,9 +117,12 @@
       <script scr="jquery.min.js"></script>
       <script src="jquery.pagepiling.js"></script>
       <script type="text/javascript">
-      $(document).ready(function() {
-        $('#pagepiling').pagepiling();
-      });
+        $(document).ready(function() {
+          $('#pagepiling').pagepiling({
+            anchors: [],
+            menu: '#myMenu'
+          });
+        });
       </script>
       <script>
       function openCity(evt, cityName) {
@@ -137,11 +139,5 @@
         evt.currentTarget.className += " active";
       }
     </script>
-    <script type="text/javascript">
-    $('#pagepiling').pagepiling({
-      anchors: [],
-      menu: '#myMenu'
-    });
-  </script>
 </body>
 </html>
