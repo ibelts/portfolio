@@ -3,160 +3,141 @@
 <head>
   <title>Portfolio | Inna Beltcova</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="menu.css">
-  <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-
-  <script src="menu.js"></script>
 </head>
 <body>
-  <div id="pagepiling">
-    <div class="section" id="section1">
-    <div class="wrapper">
-      <article class="na">
-        <div class="flex-container">
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="#section1">Homepage</a>
-              <a href="#section2">Work</a>
-              <a href="#section3">About</a>
-              <a href="#section5">Contact</a>
-            </div>
-          </div>
-          <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
-          <div class="logo"><a href="#home"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
-          </div>
-        </div>
-      </article>
-      <img class="portrait" src="images/my_photo_homepage.png" height="213px" weight="214" alt="Photo of Inna Beltcova">
-      <div class="intro"><h3>Hi! Thanks for stopping by.<br>
-        <span class="introBig">My name is Inna Beltcova and I am a <span class="highlight">UX designer</span> located in Cary, NC.</span></h3></div>
-        <div class="vl3"></div>
-        <article class="so">
-          <div class="social">
-            <a class="link" href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_small.png" ></a>
-            <a class="drib" href="https://dribbble.com/InnaB"><img src="images/dribbble_small.png"></a>
-            <a class="git" href="https://github.com/InnaBeltcova"><img src="images/github_small.png"></a>
-          </div>
-        </article>
-        <div class="vl4"></div>
-        <img class="arr" src="images/arrow.png" alt="Pointing down arrow">
-        <div class="vl1"></div>
-        <div class="rotate"><p>Portfolio</p></div>
-        <div class="vl2"></div>
-      </div>
-      </div>
-      <div class="section" id="section2">
-        <div class="wrapper">
-        <article class="na">
-          <div class="flex-container">
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#section1">Homepage</a>
-                <a href="#section2">Work</a>
-                <a href="#section3">About</a>
-                <a href="#section5">Contact</a>
-              </div>
-            </div>
-            <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/white_hamburger_menu.png" height="25px" width="40px"></span>
-            <div class="logo"><a href="#section1"><img src="images/my_logo_black.png" height= "98px" width="98px"></a>
-            </div>
-          </div>
-        </article>
-        <h1 class="title">Serious Drive</h1>
-        <h4 class="subtitle">A content management system for professional designers</h4>
-        <img class="caseHome" src="images/sd_img.png" >
-        <button class="btnCase" type="button">Case study</button>
-      </div>
-    </div>
-      <div class="section" id="section3">
+  <section id="pagepiling">
+    <section class="section" id="section1">
       <div class="wrapper">
         <article class="na">
           <div class="flex-container">
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#section1">Homepage</a>
-                <a href="#section2">Work</a>
-                <a href="#section3">About</a>
-                <a href="#section5">Contact</a>
-              </div>
-            </div>
-            <span class="hamb" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/hamburger_menu_grey.png" height="25px" width="40px"></span>
-            <div class="logo"><a href="#section1"><img src="images/logo_grey.png" height= "98px" width="98px"></a>
+            <ul id="myMenu" class="overlay-content">
+              <li data-menuanchor="page2"><a href="#page2"><h5 class="m2">Work</h5></a></li>
+              <li data-menuanchor="page3" class="active"><a href="#page3"><h5 class="m3">About</h5></a></li>
+            </ul>
+            <div class="logo"><a href="#page1"><img id="log" src="images/logo_grey.png"></a>
             </div>
           </div>
         </article>
-        <article class="uxAbout">
-          <h3>I am a UX designer with broad experience in diverse industries such as Psychology, recruitment, print design, and academic research.</h3>
-        </article>
-        <section class="whole">
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'London')"><h2 class="redHead">Psychology</h2></button>
-          <button class="tablinks" onclick="openCity(event, 'Paris')"><h2 class="redHead">Research</h2></button>
-          <button class="tablinks" onclick="openCity(event, 'Tokyo')"><h2 class="redHead">Design</h2></button>
-        </div>
-          <div id="London" class="tabcontent">
-           <p class="psy">Behavioral science has always been a source of inspiration for me. My Master's degree in Psychology (diploma with honors) gave me a solid theoretical
-            foundation in understanding people’s behavior as well as the deep reasoning behind it. This is particularly helpful in the user research phase of the design process
-            and during user tests because UX is all about empathy and understanding people.
-          </p>
-        </div>
-
-        <div id="Paris" class="tabcontent">
-          <p class="psy">There is always a fair amount of research behind every successful digital product. Working as a Research Associate at the Kazan State University (Russia)
-            taught me the importance of following a proper research process and always testing hypotheses.  Being a UX designer with an academic background allows me to bring a solid
-            work structure and logic to every project.
-          </p>
-        </div>
-        <div id="Tokyo"class="tabcontent">
-          <p class="psy">When we moved to the US in 2014, my son was four and didn't speak any English.
-            Desperately wanting to help him I started to write, design and publish dual-language books, simultaneously working on digital products. This sparked an interest in UX.
-          I joined the Interaction Design Foundation and started an apprenticeship program at Bloc. As a UX designer, I’m committed to creating solutions that make people’s lives easier.
-            My skill set and diverse experience came together in UX like the pieces of a puzzle.
-            But enough about me, let’s talk about you. Connect with me here.</p>
+        <img class="portrait" src="images/my_photo_homepage.png" alt="Photo of Inna Beltcova">
+        <div class="intro"><h3>Hi! Thanks for stopping by.<br>
+          <span class="introBig">My name is Inna Beltcova and I am a <span class="highlight">UX designer</span> located in Cary, NC.</span></h3></div>
+          <div class="vl3"></div>
+          <article class="so">
+            <div class="social">
+              <a class="mail" href="mailto:innabeltcova@gmail.com"><img src="images/envelope_small.png"></a>
+              <a class="link" href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_small.png"></a>
+              <a class="drib" href="https://dribbble.com/InnaB"><img src="images/dribbble_small.png"></a>
+              <a class="git" href="https://github.com/InnaBeltcova"><img src="images/github_small.png"></a>
+            </div>
+          </article>
+          <div class="vl4"></div>
+          <img class="arr" src="images/arrow.png" alt="Pointing down arrow">
+          <div class="vl1"></div>
+          <div class="rotate"><p>Portfolio</p></div>
+          <div class="vl2"></div>
         </div>
       </section>
-
-      <article class="socC">
-        <div class="socialC">
-         <a href="mailto:innabeltcova@gmail.com"><img src="images/envelope.png"></a>
-         <a href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_big.png" ></a>
-         <a href="https://github.com/InnaBeltcova"><img src="images/github_big.png"></a>
-         <a href="https://dribbble.com/InnaB"><img src="images/dribbble_big.png"></a>
-       </div>
-      </article>
-    </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-latest.js"></script>
-  <script scr="jquery.min.js"></script>
-  <script src="jquery.pagepiling.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-    $('#pagepiling').pagepiling();
-    });
-  </script>
-  <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+      <section class="section" id="section2">
+        <section class="wrapper">
+          <article class="na">
+            <div class="flex-container">
+              <ul id="myMenu" class="overlay-content">
+                <li class="m2"data-menuanchor="page2"><a href="#page2"><h5 class="m5">Work</h5></a></li>
+                <li class="m3" data-menuanchor="page3" class="active"><a href="#page3"><h5 class="m6">About</h5></a></li>
+              </ul>
+              <div class="logo"><a href="#page1"><img id="log" src="images/my_logo_black.png"></a>
+              </div>
+            </div>
+          </article>
+          <h1 class="title">Serious Drive</h1>
+          <h4 class="subtitle">A content management system for professional designers</h4>
+          <img class="caseHome" src="images/sd_img.png">
+          <button class="btnCase" type="button">Case study</button>
+        </section>
+      </section>
+      <section class="section" id="section3">
+        <section class="wrapper">
+          <article class="na">
+            <div class="flex-container">
+              <ul id="myMenu" class="overlay-content">
+                <li class="m2"data-menuanchor="page2"><a href="#page2"><h5 class="m2">Work</h5></a></li>
+                <li class="m3" data-menuanchor="page3" class="active"><a href="#page3"><h5 class="m3">About</h5></a></li>
+              </ul>
+              <div class="logo"><a href="#page1"><img id="log" src="images/logo_grey.png"></a>
+              </div>
+            </div>
+          </article>
+          <article class="uxAbout">
+            <h3 class="uxAbout">I am a UX designer with broad experience in diverse industries such as Psychology, recruitment, print design, and academic research.</h3>
+          </article>
+          <section class="whole">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'London')"><h2 class="redHead">Psychology<i class="fas fa-angle-down"></i></h2></button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')"><h2 class="redHead">Research<i class="fas fa-angle-down"></i></h2></button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')"><h2 class="redHead">Design<i class="fas fa-angle-down"></i></h2></button>
+            </div>
+            <div id="London" class="tabcontent">
+              <p class="psy">Behavioral science has always been a source of inspiration for me. My Master's degree in Psychology (diploma with honors) gave me a solid theoretical
+                foundation in understanding people’s behavior as well as the deep reasoning behind it. This is particularly helpful in the user research phase of the design process
+                and during user tests because UX is all about empathy and understanding people.
+              </p>
+            </div>
+            <div id="Paris" class="tabcontent">
+              <p class="psy">There is always a fair amount of research behind every successful digital product. Working as a Research Associate at the Kazan State University (Russia)
+                taught me the importance of following a proper research process and always testing hypotheses.  Being a UX designer with an academic background allows me to bring a solid
+                work structure and logic to every project.
+              </p>
+            </div>
+            <div id="Tokyo"class="tabcontent">
+              <p class="psy">When we moved to the US in 2014, my son was four and didn't speak any English.
+                Desperately wanting to help him I started to write, design and publish dual-language books, simultaneously working on digital products. This sparked an interest in UX.
+                I joined the Interaction Design Foundation and started an apprenticeship program at Bloc. As a UX designer, I’m committed to creating solutions that make people’s lives easier.
+                My skill set and diverse experience came together in UX like the pieces of a puzzle.
+                But enough about me, let’s talk about you. Connect with me here.</p>
+              </div>
+            </section>
+            <article class="socC">
+              <div class="socialC">
+                <a href="mailto:innabeltcova@gmail.com"><img src="images/envelope.png"></a>
+                <a href="https://www.linkedin.com/in/inna-beltcova-874629a/"><img src="images/linkedin_big.png" ></a>
+                <a href="https://github.com/InnaBeltcova"><img src="images/github_big.png"></a>
+                <a href="https://dribbble.com/InnaB"><img src="images/dribbble_big.png"></a>
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
+      <script scr="jquery.min.js"></script>
+      <script src="jquery.pagepiling.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('#pagepiling').pagepiling({
+            anchors: [],
+            menu: '#myMenu'
+          });
+        });
+      </script>
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
 </body>
 </html>

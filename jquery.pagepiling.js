@@ -26,20 +26,20 @@
         // Create some defaults, extending them with any options that were provided
         var options = $.extend(true, {
             direction: 'vertical',
-            menu: null,
+            menu: '#menu',
             verticalCentered: true,
             sectionsColor: [],
-            anchors: [],
+            anchors: ['page1', 'page2', 'page3'],
             scrollingSpeed: 700,
             easing: 'easeInQuart',
             loopBottom: false,
             loopTop: false,
             css3: true,
             navigation: {
-                textColor: '#000',
-                bulletsColor: '#000',
-                position: 'right',
-                tooltips: []
+                textColor: '#5B524A',
+                bulletsColor: '#5B524A',
+                position: 'left',
+                tooltips: ['Home', 'Work', 'About']
             },
             normalScrollElements: null,
             normalScrollElementTouchThreshold: 5,
