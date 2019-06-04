@@ -79,23 +79,23 @@
         </article>
         <section class="whole">
           <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')"><h2 class="redHead">Psychology<i class="fas fa-angle-down"></i></h2></button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')"><h2 class="redHead">Research<i class="fas fa-angle-down"></i></h2></button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><h2 class="redHead">Design<i class="fas fa-angle-down"></i></h2></button>
+            <button class="tablinks" onclick="about(event, 'psychology')"><h2 class="redHead">Psychology<i class="fas fa-angle-down"></i></h2></button>
+            <button class="tablinks" onclick="about(event, 'research')"><h2 class="redHead">Research<i class="fas fa-angle-down"></i></h2></button>
+            <button class="tablinks" onclick="about(event, 'design')"><h2 class="redHead">Design<i class="fas fa-angle-down"></i></h2></button>
           </div>
-          <div id="London" class="tabcontent">
+          <div id="psychology" class="tabcontent">
             <p class="psy">Behavioral science has always been a source of inspiration for me. My Master's degree in Psychology (diploma with honors) gave me a solid theoretical
               foundation in understanding people’s behavior as well as the deep reasoning behind it. This is particularly helpful in the user research phase of the design process
               and during user tests because UX is all about empathy and understanding people.
             </p>
           </div>
-          <div id="Paris" class="tabcontent">
+          <div id="research" class="tabcontent">
             <p class="psy">There is always a fair amount of research behind every successful digital product. Working as a Research Associate at the Kazan State University (Russia)
               taught me the importance of following a proper research process and always testing hypotheses.  Being a UX designer with an academic background allows me to bring a solid
               work structure and logic to every project.
             </p>
           </div>
-          <div id="Tokyo"class="tabcontent">
+          <div id="design"class="tabcontent">
             <p class="psy">When we moved to the US in 2014, my son was four and didn't speak any English.
               Desperately wanting to help him I started to write, design and publish dual-language books, simultaneously working on digital products. This sparked an interest in UX.
               I joined the Interaction Design Foundation and started an apprenticeship program at Bloc. As a UX designer, I’m committed to creating solutions that make people’s lives easier.
@@ -126,7 +126,7 @@
     });
     </script>
     <script>
-    function openCity(evt, cityName) {
+    function about(evt, aboutName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -136,7 +136,7 @@
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
-      document.getElementById(cityName).style.display = "block";
+      document.getElementById(aboutName).style.display = "block";
       evt.currentTarget.className += " active";
     }
     </script>

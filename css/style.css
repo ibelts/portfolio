@@ -106,9 +106,15 @@ h5 {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  line-height: 1.5;
+  line-height: 4.5rem;
   font-weight: lighter;
   color: #5B524A;
+  }
+#introsm {
+  font-size: 2.5rem;
+}
+.introBig {
+  font-size: 3.6rem;
 }
 .contain {
   display: flex;
@@ -120,11 +126,6 @@ h5 {
   font-size: 3.2rem;
   font-weight: lighter;
   color: #5B524A;
-}
-.psyRes {
-  font-size: 1.6rem;
-  font-weight: lighter;
-  line-height: 2.5rem;
 }
 .redHead {
   color: #D91D1D;
@@ -185,13 +186,6 @@ a:link {
   margin: 20px;
 }
 
-/*img.portrait {
-grid-column: 6 / 8;
-justify-content: center;
-align-items: center;
-width: 100%;
-} */
-
 .highlight {
   color: #D91D1D;
 }
@@ -200,6 +194,7 @@ width: 100%;
   transform: rotate(-90deg) translateY(1%) translateX(1%);
   color: #5B524A;
   opacity: 0.5;
+  font-weight: normal;
 }
 .so {
   grid-column: 12 / 12;
@@ -263,7 +258,7 @@ width: 100%;
   background: url(../images/my_photo_homepage.png), url(../images/grid.png), #ffffff;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 20%, 98%, cover;
-  background-position: 52% 25%, center, center;
+  background-position: 51% 25%, center, center;
 }
 #section3, #section4 {
   background: url(../images/grid.png) no-repeat , #ffffff;
@@ -326,7 +321,7 @@ body i {
   }
   .filler {
     display: flex;
-    height: 220px;
+    height: 230px;
   }
   #section3, #section4 {
     background: url(../images/grid.png) no-repeat , #ffffff;
@@ -354,10 +349,17 @@ body i {
   }
   .intro {
     text-align: center;
-    line-height: 1.5;
     font-weight: lighter;
     color: #5B524A;
     padding-bottom: 80px;
+  }
+  .introBig {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+  #introsm {
+    font-size: 2rem;
+    line-height: 3.5rem;
   }
   .na {
     grid-column: 1 / 8;
@@ -511,10 +513,13 @@ body i {
   }
   .intro {
     text-align: center;
-    line-height: 1.5;
     font-weight: lighter;
     color: #5B524A;
     padding-bottom: 80px;
+  }
+
+  #introsm {
+    font-size: 2rem;
   }
   .na {
     grid-column: 1 / 7;
@@ -674,10 +679,10 @@ body i {
     padding-bottom: 80px;
   }
   .introBig {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   #introsm{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .na {
     grid-column: 1 / 7;
@@ -746,7 +751,7 @@ body i {
     color: #ffffff;
     font-size: 7.5rem;
     line-height: 7.5rem;
-    padding-top: 0px;
+    padding-top: 15px;
     text-align: center;
   }
   .subtitle {
@@ -795,11 +800,12 @@ body i {
     font-size: 1.6rem;
     line-height: 2.5rem;
     text-align: center;
-  }
+    }
   .psy{
     font-size: 1.4rem;
     line-height: 2.5rem;
     padding-top: 7px;
+    font-weight: lighter;
   }
   .socC {
     grid-column: 2 / 6;
