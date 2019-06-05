@@ -683,15 +683,17 @@ body i {
   .intro {
     text-align: center;
     line-height: 1.6;
-    font-weight: lighter;
+    font-weight: normal;
     color: #5B524A;
     padding-bottom: 80px;
   }
   .introBig {
     font-size: 2.2rem;
+    font-weight: normal;
   }
   #introsm{
     font-size: 1.8rem;
+    font-weight: normal;
   }
   .na {
     grid-column: 1 / 7;
@@ -700,25 +702,25 @@ body i {
   h5.m2 {
     padding-left: 5px;
     font-size: 1.6rem;
-    font-weight: lighter;
+    font-weight: normal;
     color: #5B524A;
   }
   h5.m3 {
     padding-left: 5px;
     font-size: 1.6rem;
-    font-weight: lighter;
+    font-weight: normal;
     color: #5B524A;
   }
   h5.m5 {
     padding-left: 5px;
     font-size: 1.6rem;
-    font-weight: lighter;
+    font-weight: normal;
     color: #ffffff;
   }
   h5.m6 {
     padding-left: 5px;
     font-size: 1.6rem;
-    font-weight: lighter;
+    font-weight: normal;
     color: #ffffff;
   }
   #log {
