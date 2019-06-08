@@ -13,8 +13,12 @@ body i {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-gap: 25px;
-  margin-left: 30px;
-  margin-right: 30px;
+  height: 100%
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 25px;
   height: 100%
 }
 .wrapper {
@@ -35,7 +39,6 @@ body i {
   margin-right: 150px;
   margin-top: 100px;
   height: 100%;
-
 }
 p {
   font-size: 1.6rem;
@@ -84,50 +87,71 @@ h5 {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
-  margin-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: fixed;
+  width: 100%;
+
 }
 .overlay-content {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+
 }
 
 h5.m2 {
   padding-right: 20px;
   font-weight: lighter;
   color: #ffffff;
+  text-shadow: 2px 2px #474747;
+
 }
 h5.m3 {
-  padding-left: 50px;
+  padding-left: 20px;
   font-weight: lighter;
   color: #ffffff;
+  text-shadow: 2px 2px #474747;
+
 }
 a:link {
   text-decoration: none;
 }
 .na {
-  padding-top: 10px;
+  padding-top: 20px;
+  grid-column: 1 / 13;
+}
+.bold {
+  font-weight: bold;
 }
 /*Nav end */
 .heroIntro {
   grid-column: 2 / 6;
   color: #ffffff;
+  padding-top: 55px;
+  padding-left: 10px;
 }
 .overview {
-  grid-column: 3 / 10;
+  grid-column: 4 / 10;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
+
 }
 .heroFlex {
+  grid-column: 1 / 13;
   background: url(../images/sd_on_a_laptop.png), url(../images/grid.png), #4187C4;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 60%, 98% 100%, cover;
   background-position: 83% 35%, center, center;
   color: #ffffff;
-
+}
+body {
+  background: url(../images/grid.png);
+  background-size: 98% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #subtitle {
   padding-top: 40px;
@@ -135,6 +159,7 @@ a:link {
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #ffffff;
+  padding-left: 10px;
 }
 .btnCase {
   width: 175px;
@@ -159,6 +184,7 @@ a:link {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 10px;
 }
 #btnSpace {
   margin-bottom: 20px;
@@ -331,9 +357,12 @@ a:link {
   margin-bottom: 40px;
 }
 .wireframesBackground {
-  background: rgba(0, 0, 0, 0.55);
-  padding-top: 20px;
+  background: url(../images/grid.png), #4187C4;
+  background-size: 98% 100%;
+  background-position: center;
+  background-repeat: no-repeat, no-repeat;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 #lo_fiW {
   background: #ffffff;
@@ -428,9 +457,13 @@ a:link {
   font-size: 1.2rem;
 }
  .backgroundConclusion {
-  background: rgba(0, 0, 0, 0.55);
-  padding-top: 20px;
+   background: url(../images/grid.png), #4187C4;
+   padding-top: 20px;
+   background-size: 98% 100%;
+   background-position: center;
+   background-repeat: no-repeat, no-repeat;
   padding-bottom: 60px;
+
 }
 .conclusionGrid {
   grid-column: 1 / 13;
@@ -445,6 +478,7 @@ a:link {
   grid-column: 1 / 5;
   text-align: left;
   color: #ffffff;
+
 }
 .conclP2 {
   grid-column: 5 / 9;
@@ -475,13 +509,14 @@ a:link {
   margin-bottom: 50px;
 }
 .prototype {
-  width: 175px;
+  width: 185px;
   height: 50px;
   text-align: center;
   line-height: 1em;
-  border: 0.5px solid #4187C4;
+  border: 2px solid white;
   font-size: 1.6rem;
   grid-column: 2 / 4;
+  border-color: #ffffff;
   background: #4187C4;
   color: #ffffff;
   border-radius: 9px;
@@ -489,18 +524,27 @@ a:link {
   margin-right: 20px;
 }
 .prototype1 {
-  width: 175px;
+  width: 185px;
   height: 50px;
   text-align: center;
   line-height: 1em;
-  border: 0.5px solid #4187C4;
+  border: 2px solid white;
   font-size: 1.6rem;
   grid-column: 2 / 4;
+  border-color: #ffffff;
   background: #4187C4;
   color: #ffffff;
   border-radius: 9px;
   padding: 14px 20px;
   margin-left: 20px;
+}
+.prototype1:hover {
+  background: #ffffff;
+  color: #4187C4;
+}
+.prototype:hover {
+  background: #ffffff;
+  color: #4187C4;
 }
 .flows {
   width: 175px;
@@ -522,18 +566,132 @@ a:link {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 60px;
+  bottom: 40px;
   right: 40px;
   z-index: 99;
   font-size: 16px;
   border: none;
   outline: none;
-  background-color: rgba(0, 0, 0, 0.40);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.30);
+  color: #ffffff;
   cursor: pointer;
   padding: 10px;
   border-radius: 4px;
 }
 #myBtn:hover {
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(91, 82, 74, 0.22);
+}
+@media screen and (max-width: 1025px) {
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  grid-gap: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 60px;
+  height: 100%;
+  margin-bottom: 60px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+  grid-gap: 20px;
+  height: 100%;
+}
+.heroFlex {
+  grid-column: 1 / 13;
+  background: url(../images/sd_on_a_laptop.png), url(../images/grid.png), #4187C4;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 60%, 98% 100%, cover;
+  background-position: 83% 25%, center, center;
+  color: #ffffff;
+}
+body {
+  background: url(../images/grid.png);
+  background-size: 98% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-gap: 20px;
+  height: 100%
+}
+.heroIntro {
+  font-size: 5rem;
+  line-height: 5.5rem;
+  padding-left: 20px;
+  padding-top: 38px;
+}
+#subtitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #ffffff;
+  padding-left: 20px;
+}
+.buttons {
+  padding-left: 20px;
+}
+#btnSpace {
+  margin-bottom: 0px;
+}
+.overview {
+  grid-column: 3 / 12;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+h2 {
+  font-size: 3rem;
+}
+#log {
+  height: 40%;
+  width: 40%;
+}
+#flowsSm {
+  height: 95%;
+  width: 95%;
+}
+.flowsImg {
+  grid-column: 2 / 13;
+}
+.wrapperFl {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+  grid-gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 100px;
+  height: 100%;
+}
+.wire1, .wire2, .wire3, .wire4, .wire5 {
+  height: 90%;
+  width: 90%;
+}
+.wire2, .wire4 {
+  margin-bottom: 30px;
+}
+#l_sketch {
+  height: 50%;
+  width: 50%;
+}
+.logo_sketches {
+}
+.viewButton {
+  margin-bottom: 40px;
+}
+.conclHead {
+  padding-bottom: 20px;
+}
+.footerGrid {
+  grid-column: 6 / 13;
+}
+#square1, #square2, #square3, #square4, #square5, #square6 {
+  height: 120px;
+  width: 120px;
+}
 }
