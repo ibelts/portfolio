@@ -14,31 +14,33 @@
 </head>
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
-  <article class="heroFlex">
-    <article class="na">
-      <div class="flex-container">
-        <ul id="myMenu" class="overlay-content">
-          <li data-menuanchor="page2"><a href="index.html#page2"><h5 class="m2">Work</h5></a></li>
-          <li data-menuanchor="page3" class="active"><a href="index.html#page3"><h5 class="m3">About</h5></a></li>
-        </ul>
-        <div class="logo"><a href="index.html#page1"><img id="log" src="images/logo_shadow.png"></a>
-        </div>
-      </div>
-    </article>
-    <section id="container">
-      <section class="heroIntro">
-        <h1 class="heroIntro">Serious Drive</h1>
-        <h5 id="subtitle">A cloud storage solution<br>for professional designers.</h5>
-        <div id="buttons">
-          <a href="https://invis.io/K7RN1YVP4H5"><button type=button id="btnSpace" class="btnCase">Desktop prototype</button></a>
-          <a href="https://invis.io/HSRN3V6YGDJ"><button type="button" class="btnCase">Mobile prototype</button></a>
-        </div>
-      </section>
-      <section class="overview">
-        <h2 class="overviewTitle">Overview</h2>
-        <h5 class="overviewText">Serious Drive is a cloud storage solution tailored to the needs of professional designers. It includes an impressive variety of templates as a part of its Productivity software, provides robust data protection, and offers integration with most mainstream design software.
-        </h5>
-      </section>
+  <section id="container">
+    <article class="heroFlex">
+      <article class="grid">
+        <article class="na">
+          <div class="flex-container">
+            <ul id="myMenu" class="overlay-content">
+              <li data-menuanchor="page2"><a href="index.html#page2"><h5 class="m2">Work</h5></a></li>
+              <li data-menuanchor="page3" class="active"><a href="index.html#page3"><h5 class="m3">About</h5></a></li>
+            </ul>
+            <div class="logo"><a href="index.html#page1"><img id="log" src="images/logo_shadow.png"></a>
+            </div>
+          </div>
+        </article>
+        <section class="heroIntro">
+          <h1 class="heroIntro">Serious Drive</h1>
+          <h5 id="subtitle">A cloud storage solution<br>for professional designers.</h5>
+          <div id="buttons">
+            <a href="https://invis.io/K7RN1YVP4H5" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><button type=button id="btnSpace" class="btnCase">Desktop prototype</button></a>
+            <a href="https://invis.io/HSRN3V6YGDJ" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><button type="button" class="btnCase">Mobile prototype</button></a>
+          </div>
+        </section>
+        <section class="overview">
+          <h2 class="overviewTitle">Overview</h2>
+          <h5 class="overviewText">Serious Drive is a cloud storage solution tailored to the needs of professional designers. It includes an impressive variety of templates as a part of its Productivity software, provides robust data protection, and offers integration with most mainstream design software.
+          </h5>
+        </section>
+      </article>
     </article>
   </section>
   <section class="wrapper">
@@ -67,9 +69,9 @@
     <section class="specificationsGrid">
       <ul class="specFlex">
         <li><h2 class="rolesTitle">Specifications</h2><li>
-          <li><p>Duration</p></li>
+          <li><p class="bold">Duration</p></li>
           <li><p>5 weeks</p></li>
-          <li><p>Tools and Software</p></li>
+          <li><p class="bold">Tools and Software</p></li>
           <li><p>Figma</p></li>
           <li><p>InVision</p></li>
           <li><p>Adobe Illustrator</p></li>
@@ -283,10 +285,10 @@
                   </section>
                   <section class="wrapperFl">
                     <article class="flowsImg">
-                      <img src="images/flows.png" width="1154px" height="421px" alt="User flows diagrams">
+                      <img id= "flowsSm" src="images/flows.png" width="1154px" height="421px" alt="User flows diagrams">
                     </article>
                     <article class="viewButton">
-                      <a href="https://drive.google.com/drive/folders/1LoQG2bzWHWui48il_e-bt8YFcgE0ARIa?usp=sharing"><button type="button" class="flows">View user flows</button></a>
+                      <a href="https://drive.google.com/drive/folders/1LoQG2bzWHWui48il_e-bt8YFcgE0ARIa?usp=sharing" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><button type="button" class="flows">View user flows</button></a>
                     </article>
                   </section>
                   <section class="wireframesBackground">
@@ -300,25 +302,25 @@
                       </section>
                       <section class="wrapper">
                         <div class="wireframe1">
-                          <img src="images/wireframe_1.png" width="372px" height="574px" alt="Wireframe">
+                          <img class="wire1" src="images/wireframe_1.png" width="372px" height="574px" alt="Wireframe">
                         </div>
                         <article class="sideW1">
                           <div class=sideFlex>
                             <div class="wireframe2">
-                              <img class="topWireframes" src="images/wireframe_2.png"  width="372px" height="264px" alt="Wireframe">
+                              <img class="wire2" class="topWireframes" src="images/wireframe_2.png"  width="372px" height="264px" alt="Wireframe">
                             </div>
                             <div class="wireframe3">
-                              <img src="images/wireframe_3.png" width="372px" height="267px" alt="Wireframe">
+                              <img class="wire3" src="images/wireframe_3.png" width="372px" height="267px" alt="Wireframe">
                             </div>
                           </div>
                         </article>
                         <article class="sideW2">
                           <div class=sideFlex>
                             <div class="wireframe4">
-                              <img class="topWireframes" src="images/wireframe_4.png" width="373px" height="265px" alt="Wireframe">
+                              <img class="wire4" class="topWireframes" src="images/wireframe_4.png" width="373px" height="265px" alt="Wireframe">
                             </div>
                             <div class="wireframe5">
-                              <img src="images/wireframe_5.png" width="372px" height="265px" alt="Wireframe">
+                              <img class="wire5" src="images/wireframe_5.png" width="372px" height="265px" alt="Wireframe">
                             </div>
                           </div>
                         </article>
@@ -370,7 +372,7 @@
                           </section>
                           <section class="wrapper">
                             <article class="logo_sketches">
-                              <img src="images/logo_sketches.png" height="641px" width="1154px" alt="Logo skethes">
+                              <img id="l_sketch" src="images/logo_sketches.png" height="641px" width="1154px" alt="Logo skethes">
                             </article>
                           </section>
                           <section class="wrapper">
@@ -440,8 +442,8 @@
                           <section class="backgroundConclusion">
                             <section class="wrapper">
                               <article class="viewButton">
-                                <button type="button" class="prototype" id="flows">Desktop Prototype</button>
-                                <button type="button" class="prototype1" id="flows">Mobile Prototype</button>
+                                <a href="https://invis.io/K7RN1YVP4H5" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><button type="button" class="prototype" class="btnCase">Desktop Prototype</button></a>
+                                <a href="https://invis.io/K7RN1YVP4H5" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><button type="button" class="prototype1" class="btnCase">Mobile Prototype</button></a>
                               </article>
                               <article class="conclHead">
                                 <h2 class="conclHead">Conclusion</h2>

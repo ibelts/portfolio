@@ -157,7 +157,7 @@ h5.m2 {
   color: #5B524A;
 }
 h5.m3 {
-  padding-left: 50px;
+  padding-left: 20px;
   font-weight: lighter;
   color: #5B524A;
 }
@@ -176,7 +176,7 @@ a:link {
 }
 .na {
   grid-column: 1 / 13;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .wrapper {
   display: grid;
@@ -830,7 +830,25 @@ body i {
     padding-top: 0px;
     padding-bottom: 10px;
   }
-  nav {
-    display: ;
-  }
 }
+/* self-typing*/
+  .intro {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid grey; /* The typwriter cursor */
+    /*white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
