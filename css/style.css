@@ -314,6 +314,9 @@ body i {
     margin-right: 30px;
     height: 100%;
   }
+  .na {
+    padding-top: 20px;
+  }
   #pp-nav {
     display: none;
   }
@@ -367,7 +370,7 @@ body i {
   }
   .na {
     grid-column: 1 / 8;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   h5.m2 {
     padding-right: 10px;
@@ -484,6 +487,7 @@ body i {
     margin-right: 30px;
     height: 100%;
   }
+
   #pp-nav {
     display: none;
   }
@@ -532,7 +536,7 @@ body i {
   }
   .na {
     grid-column: 1 / 7;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   h5.m2 {
     padding-right: 10px;
@@ -689,16 +693,20 @@ body i {
     padding-bottom: 80px;
   }
   .introBig {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  .introBig2 {
+    font-size: 1.6rem;
     font-weight: normal;
   }
   #introsm{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: normal;
   }
   .na {
     grid-column: 1 / 7;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   h5.m2 {
     padding-left: 5px;
@@ -833,23 +841,3 @@ body i {
   }
 }
 /* self-typing*/
-  .introBig {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .05em solid grey; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    /*letter-spacing: .15em; /* Adjust as needed */
-    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
-  }
-
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-
-  @keyframes blinking-cursor {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }

@@ -735,7 +735,7 @@ h2 {
     margin-right: 30px;
     margin-top: 60px;
     height: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .grid {
     display: grid;
@@ -791,6 +791,16 @@ h2 {
  #square1, #square2, #square3, #square4, #square5, #square6 {
    height: 100px;
    width: 100px;
+ }
+ .evernoteGrid, .iCloudGrid, .gDGdrid {
+   grid-column: 3 / 11;
+   text-align: center;
+ }
+ .csBlock {
+   text-align: center;
+ }
+ .conclP1, .conclP2, .conclP3 {
+   grid-column: 2 / 12;
  }
  h2 {
    font-size: 2.5rem;
@@ -914,10 +924,10 @@ h2 {
   text-align: center;
   padding-left: 12px;
   padding-right: 12px;
-  letter-spacing: -0.030em;
+  padding-bottom: 20px;
 }
 .personaIm {
-  width: 60%;
+  width: 50%;
 }
 .quote {
   font-size: 1.8rem;
@@ -958,4 +968,156 @@ h5.m3 {
 .footerGrid {
   grid-column: 4 / 13;
 }
+}
+@media screen and (max-width: 416px) {
+  #log {
+    height: 30%;
+    width: 30%;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .wrapperFl {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    margin-top: 0px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 6px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-gap: 6px;
+    height: 100%;
+  }
+  .heroIntro {
+    grid-column: 1 / 7;
+    color: #ffffff;
+    padding-top: 150px;
+    text-align: center;
+  }
+  #karlaStyle, #latoStyle {
+    font-size: 4rem;
+  }
+  .overview {
+    grid-column: 1 / 7;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+  .overviewText {
+    font-size: 1.6rem;
+  }
+  .solutionGrid, .problemFlex {
+    padding:30px;
+  }
+  .problemGrid {
+    margin-bottom: -10px;
+    padding: 0px;
+  
+  }
+  .my_rolesGrid {
+    grid-column: 1 / 7;
+    padding-bottom: 30px;
+  }
+  .solutionGrid {
+    grid-column: 1 / 7;
+    padding: 0px;
+  }
+  .heroFlex {
+    grid-column: 1 / 13;
+    background: url(../images/sd_on_a_laptop.png), url(../images/grid_mobile.png), #4187C4;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 80%, 98% 100%, cover;
+    background-position: 50% 16%, center, center;
+    color: #ffffff;
+  }
+  .deliverablesGrid {
+    grid-column: 1 / 7;
+    padding-bottom: 30px;
+  }
+  .specificationsGrid {
+    grid-column: 1 / 7;
+
+  }
+  .rolesTitle {
+    padding-bottom: 20px;
+  }
+  .problemGrid {
+    grid-column: 1 / 7;
+    margin-bottom: -5px;
+  }
+  .compGrid {
+    grid-column: 1 / 7;
+  }
+  .disAndRes {
+    grid-column: 1 / 7;
+  }
+  .evernoteGrid, .iCloudGrid, .gDGdrid {
+    grid-column: 1 / 7;
+  }
+  .seven, .nine, .most {
+    grid-column: 1 / 7;
+  }
+  .gDFlex {
+    margin-bottom: 0px;
+  }
+  #flowsSm {
+    height: 100%;
+    width: 100%;
+  }
+  .flowsImg {
+    grid-column: 1 / 7;
+  }
+  .viewButton {
+    grid-column: 1 / 7;
+  }
+  .wireframe1, .wireframe2, .wireframe3, .wireframe4, .wireframe5 {
+    grid-column: 1 / 7;
+  }
+  .wire1, .wire2, .wire3, .wire4, .wire5 {
+    height: 100%;
+    width: 100%;
+  }
+  .sideW2 {
+    display: none;
+  }
+  .sideW1 {
+    margin-top: 15px;
+    grid-column: 1 / 7;
+  }
+  #widthPersonas {
+    margin-bottom: 0px;
+  }
+  .wrapperP {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    margin-top: 0px;
+  }
+  .problemFlex {
+    padding: 0px;
+  }
+  .solutionFlex {
+    padding: 0px;
+  }
 }
