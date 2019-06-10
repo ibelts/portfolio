@@ -109,7 +109,7 @@ h5 {
   line-height: 4.5rem;
   font-weight: lighter;
   color: #5B524A;
-  }
+}
 #introsm {
   font-size: 2.5rem;
 }
@@ -821,7 +821,7 @@ body i {
     line-height: 2.5rem;
     text-align: center;
     font-weight: normal;
-    }
+  }
   .psy{
     font-size: 1.4rem;
     line-height: 2.5rem;
@@ -840,4 +840,3 @@ body i {
     padding-bottom: 10px;
   }
 }
-/* self-typing*/

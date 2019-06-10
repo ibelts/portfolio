@@ -40,6 +40,16 @@ body i {
   margin-top: 100px;
   height: 100%;
 }
+.wrapperP {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-gap: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 100px;
+  height: 100%;
+  margin-bottom: 100px;
+}
 p {
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
@@ -621,6 +631,16 @@ body {
     height: 100%;
     margin-bottom: 60px;
   }
+  .wrapperP {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    height: 100%;
+    margin-bottom: 100px;
+  }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
@@ -704,10 +724,11 @@ body {
     margin-bottom: 30px;
   }
   #l_sketch {
-    height: 50%;
-    width: 50%;
+    height: 95%;
+    width: 95%;
   }
   .logo_sketches {
+    grid-column: 1 / 13;
   }
   .viewButton {
     margin-bottom: 40px;
@@ -736,6 +757,13 @@ body {
     margin-top: 60px;
     height: 100%;
     margin-bottom: 50px;
+  }
+  #l_sketch {
+    height: 95%;
+    width: 95%;
+  }
+  #persona1, #persona2, #persona3 {
+    grid-column: 2 / 9;
   }
   .grid {
     display: grid;
@@ -791,6 +819,9 @@ body {
   #square1, #square2, #square3, #square4, #square5, #square6 {
     height: 100px;
     width: 100px;
+  }
+  .logo_sketches {
+    grid-column: 1 / 13;
   }
   .evernoteGrid, .iCloudGrid, .gDGdrid {
     grid-column: 3 / 11;
@@ -969,7 +1000,7 @@ body {
     grid-column: 4 / 13;
   }
 }
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 426px) {
   #log {
     height: 35%;
     width: 35%;
@@ -993,14 +1024,14 @@ body {
     margin-top: 0px;
   }
   .wrapperF {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-      grid-gap: 6px;
-      margin-left: 20px;
-      margin-right: 20px;
-      height: 100%;
-      margin-top: 0px;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    margin-top: 0px;
+  }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
@@ -1018,14 +1049,18 @@ body {
   .heroIntro {
     grid-column: 1 / 7;
     color: #ffffff;
-    padding-top: 150px;
+    padding-top: 140px;
     text-align: center;
     padding-left: 0px;
   }
+
   #karlaStyle, #latoStyle {
     font-size: 4rem;
     padding-bottom: 25px;
     line-height: 3rem;
+  }
+  #persona1, #persona2, #persona3 {
+    grid-column: 1 / 7;
   }
   .overview {
     grid-column: 1 / 7;
@@ -1041,7 +1076,7 @@ body {
   }
   .problemGrid {
     margin-bottom: -10px;
-    padding: 0px;
+    padding: 25px;
     padding-top: 25px;
 
   }
@@ -1051,7 +1086,7 @@ body {
   }
   .solutionGrid {
     grid-column: 1 / 7;
-    padding: 0px;
+    padding: 25px;
     padding-top: 25px;
   }
   .heroFlex {
@@ -1059,7 +1094,7 @@ body {
     background: url(../images/sd_on_a_laptop.png), url(../images/grid_mobile.png), #4187C4;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 80%, 90% 100%, cover;
-    background-position: 50% 16%, center, center;
+    background-position: 50% 15%, center, center;
     color: #ffffff;
     padding-left: 0px;
   }
@@ -1073,9 +1108,12 @@ body {
   .rolesTitle {
     padding-bottom: 20px;
   }
+  .logo_sketches {
+    grid-column: 1 / 7;
+  }
   .problemGrid {
     grid-column: 1 / 7;
-    margin-bottom: -5px;
+    margin-bottom: -6px;
   }
   .compGrid {
     grid-column: 1 / 7;
@@ -1130,6 +1168,7 @@ body {
     margin-right: 20px;
     height: 100%;
     margin-top: 0px;
+    margin-bottom: 30px;
   }
   .problemFlex {
     padding: 0px;
@@ -1152,61 +1191,62 @@ body {
   .hex3, .hex6 {
     grid-column: 5 / 6;
   }
-.btnCase {
-  width: 160px;
-  height: 45px;
-  font-size: 1.4rem;
-}
-#buttons {
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 0px;
-}
-.prototype, .prototype1 {
-  width: 160px;
-  height: 45px;
-  font-size: 1.4rem;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.viewButton {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-.prototype {
-  margin-bottom: 20px;
-}
-.conclP1, .conclP2, .conclP3 {
-  grid-column: 1 / 7;
-  padding-bottom: 10px;
-}
-.footerGrid {
-  grid-column: 2 / 6;
-}
-.conclHead {
-  grid-column: 1 / 7;
-}
-.wireframesBackground {
-  padding-top: 1px;
-  padding-bottom: 50px;
-}
-.na {
-  grid-column: 1 / 7;
-}
-.flex-container {
-  padding-right: 0px;
-  padding-left: 0px;
-  width: auto;
-}
-#subtitle {
-  padding-left: 0px;
-}
-.footerFlex {
-  padding-top: 15px;
-}
-#myBtn {
-  right: 25px;
-}
+
+  .btnCase {
+    width: 160px;
+    height: 45px;
+    font-size: 1.4rem;
+  }
+  #buttons {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+  .prototype, .prototype1 {
+    width: 160px;
+    height: 45px;
+    font-size: 1.4rem;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .viewButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .prototype {
+    margin-bottom: 20px;
+  }
+  .conclP1, .conclP2, .conclP3 {
+    grid-column: 1 / 7;
+    padding-bottom: 10px;
+  }
+  .footerGrid {
+    grid-column: 2 / 6;
+  }
+  .conclHead {
+    grid-column: 1 / 7;
+  }
+  .wireframesBackground {
+    padding-top: 1px;
+    padding-bottom: 50px;
+  }
+  .na {
+    grid-column: 1 / 7;
+  }
+  .flex-container {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: auto;
+  }
+  #subtitle {
+    padding-left: 0px;
+  }
+  .footerFlex {
+    padding-top: 15px;
+  }
+  #myBtn {
+    right: 25px;
+  }
 }
