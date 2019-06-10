@@ -114,15 +114,14 @@ h5 {
 h5.m2 {
   padding-right: 20px;
   font-weight: lighter;
-  color: #ffffff;
-  text-shadow: 2px 2px #474747;
-
+  color: #ffffff ;
+  text-shadow: 1px 1px 1px #000000;
 }
 h5.m3 {
   padding-left: 20px;
   font-weight: lighter;
-  color: #ffffff;
-  text-shadow: 2px 2px #474747;
+  color: #ffffff ;
+  text-shadow: 1px 1px 1px #000000;
 }
 a:link {
   text-decoration: none;
@@ -146,6 +145,8 @@ a:link {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
 .heroFlex {
@@ -610,7 +611,7 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.40);
   color: #ffffff;
   cursor: pointer;
   padding: 10px;
@@ -699,6 +700,9 @@ body {
   #log {
     height: 40%;
     width: 40%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
   }
   #flowsSm {
     height: 95%;
@@ -743,6 +747,22 @@ body {
     height: 120px;
     width: 120px;
   }
+  .flex-container {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
+h5.m3 {
+  padding-left: 10px;
+  font-weight: lighter;
+  color: #ffffff;
+  padding-right: 10px;
+  font-size: 1.6rem;
+}
+.na {
+  padding-top: 0px;
+}
   .backgroundConclusion {
     padding-bottom: 40px;
   }
@@ -758,6 +778,12 @@ body {
     height: 100%;
     margin-bottom: 50px;
   }
+  .flex-container {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
   #l_sketch {
     height: 95%;
     width: 95%;
@@ -981,14 +1007,14 @@ body {
     padding-right: 10px;
     font-weight: lighter;
     color: #ffffff;
-    text-shadow: 2px 2px #474747;
-
+    font-size: 1.6rem;
   }
   h5.m3 {
     padding-left: 10px;
     font-weight: lighter;
     color: #ffffff;
-    text-shadow: 2px 2px #474747;
+    padding-right: 10px;
+    font-size: 1.6rem;
   }
   .karla {
     grid-column: 1 / 7;
@@ -1002,8 +1028,11 @@ body {
 }
 @media screen and (max-width: 426px) {
   #log {
-    height: 35%;
-    width: 35%;
+    height: 30%;
+    width: 30%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
   }
   .wrapper {
     display: grid;
@@ -1037,8 +1066,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-gap: 6px;
     height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+
   }
   #container {
     display: grid;
@@ -1047,11 +1075,12 @@ body {
     height: 100%;
   }
   .heroIntro {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
     color: #ffffff;
     padding-top: 140px;
     text-align: center;
-    padding-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   #karlaStyle, #latoStyle {
@@ -1063,7 +1092,7 @@ body {
     grid-column: 1 / 7;
   }
   .overview {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 70px;
@@ -1234,12 +1263,14 @@ body {
   }
   .na {
     grid-column: 1 / 7;
+    padding-top: 0px;
   }
   .flex-container {
     padding-right: 0px;
     padding-left: 0px;
-    width: auto;
-  }
+    width: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
   #subtitle {
     padding-left: 0px;
   }
