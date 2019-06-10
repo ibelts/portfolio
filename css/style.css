@@ -109,7 +109,9 @@ h5 {
   line-height: 4.5rem;
   font-weight: lighter;
   color: #5B524A;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
+}
 #introsm {
   font-size: 2.5rem;
 }
@@ -158,7 +160,7 @@ h5.m2 {
   color: #5B524A;
 }
 h5.m3 {
-  padding-left: 20px;
+  padding-left: 10px;
   font-weight: lighter;
   color: #5B524A;
 }
@@ -168,7 +170,7 @@ h5.m5 {
   color: #ffffff;
 }
 h5.m6 {
-  padding-left: 50px;
+  padding-left: 10px;
   font-weight: lighter;
   color: #ffffff;
 }
@@ -253,6 +255,8 @@ a:link {
   color: #5B524A;
   line-height: 3.5rem;
   font-weight: lighter;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #section1 {
@@ -542,21 +546,24 @@ body i {
     padding-right: 10px;
     font-weight: lighter;
     color: #5B524A;
+    font-size: 1.6rem;
   }
   h5.m3 {
     padding-left: 10px;
     font-weight: lighter;
     color: #5B524A;
+    font-size: 1.6rem;
   }
   h5.m5 {
     padding-right: 10px;
     font-weight: lighter;
     color: #ffffff;
+    font-size: 1.6rem;
   }
   h5.m6 {
-    padding-left: 10px;
     font-weight: lighter;
     color: #ffffff;
+    font-size: 1.6rem;
   }
   #log {
     height: 40%;
@@ -648,8 +655,8 @@ body i {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-gap: 6px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     height: 100%;
   }
   #section1 {
@@ -680,7 +687,7 @@ body i {
     justify-content: space-between;
   }
   .center {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
     font-size: 3.2rem;
     font-weight: lighter;
     color: #5B524A;
@@ -705,8 +712,8 @@ body i {
     font-weight: normal;
   }
   .na {
-    grid-column: 1 / 7;
-    padding-top: 20px;
+    grid-column: 1 / 9;
+    padding-top: 0px;
   }
   h5.m2 {
     padding-left: 5px;
@@ -716,6 +723,7 @@ body i {
   }
   h5.m3 {
     padding-left: 5px;
+    padding-right: 10px;
     font-size: 1.6rem;
     font-weight: normal;
     color: #5B524A;
@@ -728,13 +736,17 @@ body i {
   }
   h5.m6 {
     padding-left: 5px;
+    padding-right: 10px;
     font-size: 1.6rem;
     font-weight: normal;
     color: #ffffff;
   }
   #log {
-    height: 35%;
-    width: 35%;
+    height: 30%;
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
   }
   .social {
     display: flex;
@@ -758,7 +770,7 @@ body i {
     display: none;
   }
   .secondGrid {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
     text-align: center;
   }
   .secondFlex {
@@ -802,7 +814,9 @@ body i {
     align-items: center;
   }
   .whole {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .tab button {
     padding: 6px;
@@ -816,12 +830,12 @@ body i {
     padding: 0px;
   }
   .uxAbout {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
     font-size: 1.6rem;
     line-height: 2.5rem;
     text-align: center;
     font-weight: normal;
-    }
+  }
   .psy{
     font-size: 1.4rem;
     line-height: 2.5rem;
@@ -840,4 +854,3 @@ body i {
     padding-bottom: 10px;
   }
 }
-/* self-typing*/
