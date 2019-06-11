@@ -222,18 +222,16 @@ a:link {
 
 .title {
   color: #ffffff;
-  font-size:
 }
 .subtitle {
   grid-column: 2 / 5;
-  margin-top: ;
   color: #ffffff;
   padding-top: 45px;
   padding-bottom: 45px;
   line-height: 3rem;
 }
 .btnCase {
-  width: 181px;
+  width: 176px;
   height: 50px;
   text-align: center;
   line-height: 1em;
@@ -304,7 +302,7 @@ body i {
 }
 #log {
   height: 98px;
-  weight: 98px;
+  width: 98px;
 }
 .filler {
   display: flex;
@@ -798,7 +796,7 @@ body i {
     font-size: 1.8rem;
   }
   .btnCase {
-    width: 170px;
+    width: 181px;
     height: 50px;
     text-align: center;
     line-height: 1em;
