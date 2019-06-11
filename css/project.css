@@ -1212,13 +1212,13 @@ h5.m3 {
     padding-bottom: 30px;
   }
   .hex1, .hex5 {
-    grid-column: 1 / 2;
+    grid-column: span 2;
   }
   .hex2, .hex4 {
-    grid-column: 3 / 4;
+    grid-column: span 2;
   }
   .hex3, .hex6 {
-    grid-column: 5 / 6;
+    grid-column: span 2;
   }
 
   .btnCase {
