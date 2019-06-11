@@ -843,7 +843,7 @@ body i {
     font-weight: normal;
   }
   .socC {
-    grid-column: 2 / 6;
+    grid-column: 3 / 6;
   }
   .socialC {
     display: flex;
