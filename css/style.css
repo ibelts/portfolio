@@ -22,12 +22,13 @@ body {font-family: 'Open Sans';}
   padding: 14px ;
   transition: 0.3s;
   font-size: 17px;
-
+  width: calc(100% /3);
 }
 .tab {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -298,7 +299,7 @@ a:link {
 }
 body i {
   font-family:'FontAwesome'!important;
-  padding-left: 10px;
+  padding-left: 6px;
   font-size: 20px;
 }
 #log {
@@ -464,6 +465,7 @@ body i {
     grid-column: 2 / 7;
     font-size: 2rem;
     font-weight: normal;
+    padding-left: 0px;
   }
   .redHead {
     font-size: 2.4rem;
@@ -822,7 +824,7 @@ body i {
     padding: 6px;
   }
   h2.redHead {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 3px;
   }
 
@@ -835,6 +837,7 @@ body i {
     line-height: 2.5rem;
     text-align: center;
     font-weight: normal;
+    padding-left: 15px;
   }
   .psy{
     font-size: 1.4rem;
@@ -843,7 +846,9 @@ body i {
     font-weight: normal;
   }
   .socC {
-    grid-column: 3 / 6;
+    grid-column: 1 / 9;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .socialC {
     display: flex;
