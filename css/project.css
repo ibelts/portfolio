@@ -11,19 +11,19 @@ body i {
 }
 #container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 25px;
   height: 100%
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 25px;
   height: 100%
 }
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-gap: 20px;
   margin-left: 150px;
   margin-right: 150px;
@@ -33,7 +33,7 @@ body i {
 }
 .wrapperFl {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-gap: 20px;
   margin-left: 150px;
   margin-right: 150px;
@@ -42,7 +42,7 @@ body i {
 }
 .wrapperP {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-gap: 20px;
   margin-left: 150px;
   margin-right: 150px;
@@ -539,7 +539,7 @@ body {
 }
 .wrapperF {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-gap: 20px;
   margin-left: 150px;
   margin-right: 150px;
@@ -681,19 +681,19 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-gap: 25px;
   height: 100%
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-gap: 25px;
   height: 100%
 }
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   grid-gap: 20px;
   margin-left: 40px;
   margin-right: 40px;
@@ -704,7 +704,7 @@ body {
 .wrapperP {
   margin-left: 40px;
   margin-right: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
 }
 .wrapperFl {
   margin-left: 40px;
@@ -748,7 +748,7 @@ body {
   grid-column: 1 / 13;
   background: url(../images/sd_on_a_laptop.png), url(../images/grid.png), #4187C4;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 65%, 98% 100%, cover;
+  background-size: 65%, 90% 100%, cover;
   background-position: 83% 30%, center, center;
   color: #ffffff;
 }
@@ -814,7 +814,7 @@ body {
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
     grid-gap: 20px;
     height: 100%;
   }
@@ -834,7 +834,7 @@ body {
   }
   #container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-gap: 20px;
     height: 100%;
   }
@@ -883,7 +883,7 @@ body {
   }
   .wrapperFl {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
     grid-gap: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -971,7 +971,7 @@ h5.m3 {
     grid-column: 1 / 11;
     background: url(../images/sd_on_a_laptop.png), url(../images/grid_mobile.png), #4187C4;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 80%, 98% 100%, cover;
+    background-size: 80%, 90% 100%, cover;
     background-position: 50% 18%, center, center;
     color: #ffffff;
   }
@@ -983,13 +983,13 @@ h5.m3 {
   }
   #container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     grid-gap: 20px;
     height: 100%;
   }
   .wrapperFl {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
     grid-gap: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -1228,7 +1228,7 @@ h5.m3 {
   }
   .wrapperFl {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 6px;
     margin-left: 20px;
     margin-right: 20px;
@@ -1237,7 +1237,7 @@ h5.m3 {
   }
   .wrapperF {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 6px;
     margin-left: 20px;
     margin-right: 20px;
@@ -1246,14 +1246,14 @@ h5.m3 {
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 6px;
     height: 100%;
 
   }
   #container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
     grid-gap: 6px;
     height: 100%;
   }
@@ -1374,7 +1374,7 @@ h5.m3 {
   }
   .wrapperP {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 6px;
     margin-left: 20px;
     margin-right: 20px;
