@@ -184,7 +184,7 @@ a:link {
 }
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   height: 100%;
   grid-gap: 25px;
   margin: 20px;
@@ -315,13 +315,10 @@ body i {
   .tabcontent {
     padding-left: 0px;
   }
-  .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
-  }
 }
 @media screen and (max-width: 1177px) {
 .wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 .whole {
   grid-column: 2 / 12;
@@ -353,7 +350,8 @@ body i {
 @media screen and (max-width: 1025px) {
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+
     grid-gap: 25px;
     margin-left: 30px;
     margin-right: 30px;
@@ -527,7 +525,7 @@ body i {
 @media screen and (max-width: 769px) {
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 25px;
     margin-left: 30px;
     margin-right: 30px;
@@ -692,10 +690,21 @@ body i {
     padding-bottom: 10px;
   }
 }
+@media screen and (max-width: 588px) {
+  .redHead {
+    font-size: 1.6rem;
+  }
+  .uxAbout {
+    font-size: 1.6rem;
+  }
+  .socC {
+    grid-column: 1 / 7;
+  }
+}
 @media screen and (max-width: 416px) {
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 6px;
     margin-left: 0px;
     margin-right: 0px;
