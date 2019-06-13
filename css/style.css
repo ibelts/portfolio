@@ -143,7 +143,7 @@ h5 {
 }
 
 /*Flex-box nav*/
-.flex-container {
+.flex-containerH {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -179,11 +179,11 @@ h5.m6 {
 a:link {
   text-decoration: none;
 }
-.na {
+.naH {
   grid-column: 1 / 13;
   padding-top: 20px;
 }
-.wrapper {
+.wrapperH {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   height: 100%;
@@ -317,7 +317,7 @@ body i {
   }
 }
 @media screen and (max-width: 1177px) {
-  .wrapper {
+  .wrapperH {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
   .whole {
@@ -348,7 +348,7 @@ body i {
   }
 }
 @media screen and (max-width: 1025px) {
-  .wrapper {
+  .wrapperH {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 
@@ -357,7 +357,7 @@ body i {
     margin-right: 30px;
     height: 100%;
   }
-  .na {
+  .naH {
     padding-top: 20px;
   }
   #pp-nav {
@@ -411,7 +411,7 @@ body i {
     font-size: 2rem;
     line-height: 3.5rem;
   }
-  .na {
+  .naH {
     grid-column: 1 / 8;
     padding-top: 20px;
   }
@@ -523,7 +523,7 @@ body i {
   }
 }
 @media screen and (max-width: 769px) {
-  .wrapper {
+  .wrapperH {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 25px;
@@ -577,7 +577,7 @@ body i {
   #introsm {
     font-size: 2rem;
   }
-  .na {
+  .naH {
     grid-column: 1 / 7;
     padding-top: 20px;
   }
@@ -701,7 +701,7 @@ body i {
   }
 }
 @media screen and (max-width: 416px) {
-  .wrapper {
+  .wrapperH {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 6px;
@@ -761,7 +761,7 @@ body i {
     font-size: 1.6rem;
     font-weight: normal;
   }
-  .na {
+  .naH {
     grid-column: 1 / 9;
     padding-top: 0px;
   }
