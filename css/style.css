@@ -270,7 +270,7 @@ a:link {
   background-size: 98% 100%;
 }
 #section2 {
-  background: url(../images/sd_img.png), url(../images/grid.png), #4187C4;
+  background: url(../images/sdImg.png), url(../images/grid.png), #4187C4;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 70%, 98%, cover;
   background-position: right, center, center;
@@ -380,7 +380,7 @@ body i {
     background-size: 98% 100%;
   }
   #section2 {
-    background: url(../images/sd_img.png), url(../images/grid.png), #4187C4;
+    background: url(../images/sdImg.png), url(../images/grid.png), #4187C4;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 70%, 95% 100%, cover;
     background-position: right, center, center;
@@ -551,7 +551,7 @@ body i {
     background-size: 98% 100%;
   }
   #section2 {
-    background: url(../images/sd_img.png), url(../images/grid.png), #4187C4;
+    background: url(../images/sdImg.png), url(../images/grid.png), #4187C4;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 85%, cover, cover;
     background-position: 50% 25%, center, center;
@@ -725,7 +725,7 @@ body i {
     background-size: 90%, 100%;
   }
   #section2 {
-    background: url(../images/sd_img.png), url(../images/grid_mobile.png), #4187C4;
+    background: url(../images/sdImg.png), url(../images/grid_mobile.png), #4187C4;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 85%, 90%, cover;
     background-position: 50% 25%, center, center;
