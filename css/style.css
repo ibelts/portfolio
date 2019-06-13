@@ -143,7 +143,7 @@ h5 {
 }
 
 /*Flex-box nav*/
-.flex-containerH {
+.flex-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
