@@ -317,35 +317,35 @@ body i {
   }
 }
 @media screen and (max-width: 1177px) {
-.wrapper {
-grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-}
-.whole {
-  grid-column: 2 / 12;
-}
-.uxAbout {
-  grid-column: 2 / 12;
-  padding-left: 0px;
-}
-.redHead {
-  font-size: 2.4rem;
-}
-.socC {
-  grid-column: 2 / 6;
-}
-.title {
-  font-size: 8rem;
-}
-#log {
-  height: 40%;
-  width: 40%;
-}
-.filler {
-  height: 235px;
-}
-.tabcontent {
-  padding-left: 0px;
-}
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  .whole {
+    grid-column: 2 / 12;
+  }
+  .uxAbout {
+    grid-column: 2 / 12;
+    padding-left: 0px;
+  }
+  .redHead {
+    font-size: 2.4rem;
+  }
+  .socC {
+    grid-column: 2 / 6;
+  }
+  .title {
+    font-size: 8rem;
+  }
+  #log {
+    height: 40%;
+    width: 40%;
+  }
+  .filler {
+    height: 235px;
+  }
+  .tabcontent {
+    padding-left: 0px;
+  }
 }
 @media screen and (max-width: 1025px) {
   .wrapper {
@@ -531,7 +531,6 @@ grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     margin-right: 30px;
     height: 100%;
   }
-
   #pp-nav {
     display: none;
   }
