@@ -179,6 +179,9 @@ h5.m6 {
 a:link {
   text-decoration: none;
 }
+.location {
+  font-weight: bolder;
+}
 .naH {
   grid-column: 1 / 13;
   padding-top: 20px;

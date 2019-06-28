@@ -273,10 +273,10 @@ body {
   flex-direction: row;
 }
 .method {
-  background: rgba(91, 82, 74, 0.40);
+  background: rgba(91, 82, 74, 0.03);
   padding: 15px;
   text-align: center;
-  color: #ffffff;
+  color: rgb(91, 82, 74);
   margin-bottom: 10px;
 }
 .summary {
@@ -365,6 +365,7 @@ body {
 }
 .frustrations {
   margin-top: 15px;
+  text-align: left;
 }
 .fruBold {
   font-weight: bold;
@@ -1038,7 +1039,7 @@ body {
     grid-column: 2 / 12;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .my_rolesGrid {
     grid-column: 1 / 5;
@@ -1056,12 +1057,12 @@ body {
     flex-direction: column;
   }
   .method {
-    background: rgba(91, 82, 74, 0.40);
+    background: rgba(91, 82, 74, 0.03);
     width: 270px;
     padding: 12px;
     text-align: center;
     font-size: 1.6rem;
-    color: #ffffff;
+    color: rgb(91, 82, 74);
   }
   .sectionTitle1 {
     padding-bottom: 20px;
@@ -1153,13 +1154,16 @@ body {
   .frustrations {
     font-size: 14px;
   }
+  .overviewTitle {
+    text-align: center;
+  }
   .evernoteFlex, .iCloudFlex, .gDFlex {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-left: 12px;
     padding-right: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   .personaIm {
     width: 35%;
@@ -1231,7 +1235,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     height: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .wrapperFl {
     display: grid;
@@ -1286,6 +1290,7 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 70px;
+    text-align: left;
   }
   .overviewText {
     font-size: 1.6rem;
@@ -1560,12 +1565,16 @@ body {
   }
   .overview {
     grid-column: 1 / 9;
-    text-align: center;
+
     padding-top: 30px;
     padding-bottom: 70px;
   }
   .overviewText {
     font-size: 1.6rem;
+    text-align: left;
+  }
+  .overviewTitle {
+    text-align: center;
   }
   .solutionGrid, .problemFlex {
     padding:30px;
