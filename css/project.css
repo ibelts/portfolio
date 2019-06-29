@@ -77,9 +77,10 @@ h3 {
   color: #5B524A;
 }
 h4 {
-  font-size: 2rem;
-  font-family: 'Open Sans', sans-serif;
-  color: #5B524A;
+  font-size: 2.3rem;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+  font-weight: bold;
 }
 h5 {
   font-size: 1.8rem;
@@ -243,18 +244,9 @@ body {
   text-align: left;
 }
 .sectionTitle1 {
-  padding-bottom: 20px;
-  background: #ffffff;
-  padding: 10px;
-  width: 300px;
   text-align: center;
 }
 .sectionTitle2 {
-  padding-bottom: 20px;
-  background: rgba(91, 82, 74, 0.16);
-  background-size: auto;
-  padding: 10px;
-  width: 300px;
   text-align: center;
 }
 .textP {
@@ -273,14 +265,11 @@ body {
   flex-direction: row;
 }
 .method {
-  background: rgba(91, 82, 74, 0.03);
-  padding: 15px;
-  text-align: center;
-  color: rgb(91, 82, 74);
+  text-align: left;
   margin-bottom: 10px;
 }
 .summary {
-  padding-left: 50px;
+  padding-left: 10px;
 }
 .evernoteGrid {
   grid-column: 1 / 5;
@@ -330,6 +319,11 @@ body {
   margin-bottom: 20px;
   background: rgba(91, 82, 74, 0.05);
   padding: 10px;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  color: rgb(91, 82, 74);
 }
 #widthComp {
   width: 250px;
@@ -341,15 +335,12 @@ body {
   width: 140px;
 }
 #widthmethod {
-  width: 300px;
+  width: 350px;
 }
 #lo_fiW {
-  background: #ffffff;
   width: 210px;
-  padding: 15px;
-  text-align: center;
-  color: #5B524A;
-  font-size: 2rem;
+  text-align: left;
+  color: #ffffff;
 }
 #widthUsab {
   width: 200px;
@@ -1057,29 +1048,21 @@ body {
     flex-direction: column;
   }
   .method {
-    background: rgba(91, 82, 74, 0.03);
     width: 270px;
     padding: 12px;
-    text-align: center;
-    font-size: 1.6rem;
-    color: rgb(91, 82, 74);
+    padding-left: 0px;
+    text-align: left;
+    font-size: 1.8rem;
   }
   .sectionTitle1 {
     padding-bottom: 20px;
-    background: #ffffff;
-    padding: 10px;
-    width: 120px;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .sectionTitle2 {
     padding-bottom: 20px;
-    background: rgba(91, 82, 74, 0.16);
-    background-size: auto;
-    padding: 10px;
-    width: 120px;
+    font-size: 1.8rem;
     text-align: center;
-    font-size: 1.6rem;
   }
   .heroIntro {
     grid-column: 3 / 11;
@@ -1132,12 +1115,12 @@ body {
     width: 240px;
   }
   #lo_fiW {
-    background: #ffffff;
     width: 170px;
     padding: 10px;
-    text-align: center;
-    color: #5B524A;
-    font-size: 1.6rem;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding-left: 0px;
   }
   #widthUsab {
     width: 170px;
@@ -1206,6 +1189,9 @@ body {
   }
   .footerGrid {
     grid-column: 4 / 13;
+  }
+  .textP {
+    margin-top: 0px;
   }
 }
 
@@ -1538,7 +1524,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 6px;
     height: 100%;
-
   }
   #container {
     display: grid;
@@ -1554,7 +1539,6 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
-
   #karlaStyle, #latoStyle {
     font-size: 4rem;
     padding-bottom: 25px;
@@ -1583,7 +1567,6 @@ body {
     margin-bottom: -10px;
     padding: 25px;
     padding-top: 25px;
-
   }
   .my_rolesGrid {
     grid-column: 1 / 7;
