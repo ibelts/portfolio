@@ -66,6 +66,11 @@ body {font-family: 'Open Sans';}
 html {
   font-size: 10px;
 }
+.developed {
+  margin-top: 50px;
+  font-size: 13px;
+  color: #5B524A;
+}
 
 .logoGrey {
   height: 98px;
