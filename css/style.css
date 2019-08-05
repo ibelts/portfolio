@@ -68,7 +68,7 @@ html {
 }
 .developed {
   margin-top: 50px;
-  font-size: 13px;
+  font-size: 12px;
   color: #5B524A;
 }
 
@@ -252,11 +252,28 @@ a:link {
   color: #ffffff;
   border-radius: 9px;
   padding: 14px 20px;
-
+}
+button.btnCaseS {
+  width: 181px;
+  height: 50px;
+  text-align: center;
+  line-height: 1em;
+  border: 2px solid white;
+  font-size: 2rem;
+  grid-column: 2 / 4;
+  border-color: #ffffff;
+  background: #F15A24;
+  color: #ffffff;
+  border-radius: 9px;
+  padding: 14px 20px;
 }
 .btnCase:hover {
   background: #ffffff;
   color: #4187C4;
+}
+.btnCaseS:hover {
+  background: #ffffff;
+  color: #F15A24;
 }
 .uxAbout {
   grid-column: 3 / 11;
@@ -279,6 +296,12 @@ a:link {
 }
 #section2 {
   background: url(../images/sdImg.png), url(../images/grid.png), #4187C4;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 70%, 98%, cover;
+  background-position: right, center, center;
+}
+#section2a {
+  background: url(../images/sovaHome.png), url(../images/grid.png), #F15A24;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 70%, 98%, cover;
   background-position: right, center, center;
@@ -372,28 +395,40 @@ body i {
     display: none;
   }
   #section1 {
-    background: url(../images/my_photo_homepage.png), url(../images/grid.png), #ffffff;
+    background: url(../images/my_photo_homepage.png), url(../images/grid_mobile.png), #ffffff;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 30%, 95% 100%, cover;
     background-position: 50% 25%, center, center;
+  }
+  #section2 {
+    background: url(../images/sdImg.png), url(../images/grid_mobile.png), #4187C4;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 70%, 95% 100%, cover;
+    background-position: right, center, center;
+  }
+  #section2a {
+    background: url(../images/sovaHome.png), url(../images/grid_mobile.png), #F15A24;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 70%, 95% 100%, cover;
+    background-position: right, center, center;
   }
   .filler {
     display: flex;
     height: 230px;
   }
   #section3, #section4 {
-    background: url(../images/grid.png) no-repeat , #ffffff;
+    background: url(../images/grid_mobile.png) no-repeat , #ffffff;
     background-size: cover;
     background-position: center;
     background-size: 98% 100%;
   }
-  #section2 {
-    background: url(../images/sdImg.png), url(../images/grid.png), #4187C4;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 70%, 95% 100%, cover;
-    background-position: right, center, center;
+  #section3 {
+    background: url(../images/grid_mobile.png) no-repeat , #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-size: 98% 100%;
   }
-  .contain {
+.contain {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -501,11 +536,9 @@ body i {
     color: #ffffff;
     border-radius: 9px;
     padding: 14px 20px;
-
   }
   .whole {
     grid-column: 2 / 7;
-
   }
   .uxAbout {
     grid-column: 2 / 7;
@@ -553,13 +586,19 @@ body i {
     height: 220px;
   }
   #section3, #section4 {
-    background: url(../images/grid.png) no-repeat , #ffffff;
+    background: url(../images/grid_mobile.png) no-repeat , #ffffff;
     background-size: cover;
     background-position: center;
     background-size: 98% 100%;
   }
   #section2 {
     background: url(../images/sdImg.png), url(../images/grid.png), #4187C4;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 85%, cover, cover;
+    background-position: 50% 25%, center, center;
+  }
+  #section2a {
+    background: url(../images/sovaHome.png), url(../images/grid.png), #F15A24;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 85%, cover, cover;
     background-position: 50% 25%, center, center;
@@ -738,6 +777,12 @@ body i {
     background-size: 85%, 90%, cover;
     background-position: 50% 25%, center, center;
   }
+  #section2a {
+    background: url(../images/sovaHome.png), url(../images/grid_mobile.png), #F15A24;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 85%, 90%, cover;
+    background-position: 50% 25%, center, center;
+  }
   .contain {
     display: flex;
     flex-direction: column;
@@ -841,7 +886,7 @@ body i {
     color: #ffffff;
     font-size: 7.5rem;
     line-height: 7.5rem;
-    padding-top: 15px;
+    padding-top: 90px;
     text-align: center;
   }
   .subtitle {

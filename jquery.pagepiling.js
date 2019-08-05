@@ -39,7 +39,7 @@
                 textColor: '#5B524A',
                 bulletsColor: '#5B524A',
                 position: 'left',
-                tooltips: ['Home', 'Work', 'About']
+                tooltips: ['Home', 'Work1', 'Work2', 'About']
             },
             normalScrollElements: null,
             normalScrollElementTouchThreshold: 5,

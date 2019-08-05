@@ -9,6 +9,11 @@ html {
 body i {
   font-family:'FontAwesome'!important;
 }
+.developed {
+  font-size: 14px;
+  padding-left: 8px;
+  padding-bottom: 5px;
+}
 #container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -141,14 +146,13 @@ a:link {
   padding-top: 55px;
   padding-left: 10px;
 }
-.overview {
+.overview, .overviewS {
   grid-column: 4 / 10;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 .heroFlex {
   grid-column: 1 / 13;
@@ -324,6 +328,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   color: rgb(91, 82, 74);
+  line-height: 2.6rem;
 }
 #widthComp {
   width: 250px;
@@ -396,6 +401,14 @@ body {
 }
 .wireframesBackground {
   background: url(../images/grid.png), #4187C4;
+  background-size: 98% 100%;
+  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.wireframesBackgroundS {
+  background: url(../images/grid.png), #F15A24;
   background-size: 98% 100%;
   background-position: center;
   background-repeat: no-repeat, no-repeat;
@@ -620,6 +633,9 @@ body {
     margin-left: 50px;
     margin-right: 50px;
   }
+  .overviewS {
+    grid-column: 3 / 10;
+  }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   }
@@ -661,10 +677,18 @@ body {
     margin-right: 50px;
   }
 }
-@media screen and (max-width: 1177px) {
+@media screen and (max-width: 1401px) {
   #log {
     height: 40%;
     width: 40%;
+  }
+  .overviewS {
+    grid-column: 4 / 10;
+    text-align: center;
+    padding-top: 210px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #l_sketch {
     height: 95%;
@@ -736,6 +760,10 @@ body {
     margin-left: 50px;
   }
   .heroIntro {
+    font-size: 7rem;
+    line-height: 7.2rem;
+  }
+  .heroIntroS {
     font-size: 7rem;
     line-height: 7.2rem;
   }
@@ -841,6 +869,12 @@ body {
     padding-left: 20px;
     padding-top: 38px;
   }
+  .heroIntroS {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    padding-left: 20px;
+    padding-top: 38px;
+  }
   #subtitle {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -914,6 +948,10 @@ body {
     height: 120px;
     width: 120px;
   }
+  #square1S, #square2S, #square3, #square4S, #square5S, #square6S {
+    height: 120px;
+    width: 120px;
+  }
   .flex-container {
     padding-right: 0px;
     padding-left: 0px;
@@ -975,6 +1013,7 @@ body {
     color: #ffffff;
     width: 100vw;
   }
+
   body {
     background: url(../images/grid.png);
     background-size: 90% 100%;
@@ -998,6 +1037,14 @@ body {
   }
   .wireframesBackground {
     background: url(../images/grid.png), #4187C4;
+    background-size: 90% 100%, cover;
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .wireframesBackgroundS {
+    background: url(../images/grid.png), #F15A24;
     background-size: 90% 100%, cover;
     background-position: center;
     background-repeat: no-repeat, no-repeat;
@@ -1070,7 +1117,13 @@ body {
     padding-top: 250px;
     text-align: center;
   }
-  .overview {
+  .heroIntroS {
+    grid-column: 3 / 11;
+    color: #ffffff;
+    padding-top: 250px;
+    text-align: center;
+  }
+  .overview, .overviewS {
     grid-column: 3 / 11;
     text-align: center;
     padding-top: 30px;
@@ -1262,7 +1315,14 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
-
+  .heroIntroS {
+    grid-column: 1 / 9;
+    color: #ffffff;
+    padding-top: 190px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   #karlaStyle, #latoStyle {
     font-size: 4rem;
     padding-bottom: 25px;
@@ -1271,7 +1331,7 @@ body {
   #persona1, #persona2, #persona3 {
     grid-column: 1 / 7;
   }
-  .overview {
+  .overview, .overviewS {
     grid-column: 1 / 9;
     text-align: center;
     padding-top: 30px;
@@ -1307,6 +1367,15 @@ body {
     background-position: 50% 15%, center, center;
     color: #ffffff;
     padding-left: 0px;
+    width: 100vw;
+  }
+  .heroFlexS {
+    grid-column: 1 / 11;
+    background: url(../images/sovaMac.png), url(../images/grid.png), #F15A24;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 50%, 90% 100%, cover;
+    background-position: 50% 15%, center, center;
+    color: #ffffff;
     width: 100vw;
   }
   body {
@@ -1462,6 +1531,16 @@ body {
     padding-bottom: 30px;
     padding-top: 30px;
   }
+  .wireframesBackgroundS {
+    padding-top: 1px;
+    padding-bottom: 50px;
+    background: url(../images/grid_mobile.png), #F15A24;
+    background-size: 90% 100%;
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
   .na {
     grid-column: 1 / 7;
     padding-top: 0px;
@@ -1539,6 +1618,14 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .heroIntroS {
+    grid-column: 1 / 9;
+    color: #ffffff;
+    padding-top: 150px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   #karlaStyle, #latoStyle {
     font-size: 4rem;
     padding-bottom: 25px;
@@ -1547,9 +1634,8 @@ body {
   #persona1, #persona2, #persona3 {
     grid-column: 1 / 7;
   }
-  .overview {
+  .overview, .overviewS {
     grid-column: 1 / 9;
-
     padding-top: 30px;
     padding-bottom: 70px;
   }
@@ -1720,6 +1806,11 @@ body {
     padding-top: 1px;
     padding-bottom: 50px;
   }
+  .wireframesBackgroundS {
+    padding-top: 1px;
+    padding-bottom: 50px;
+  }
+
   .na {
     grid-column: 1 / 7;
     padding-top: 0px;
@@ -1740,5 +1831,281 @@ body {
   #myBtn {
     right: 20px;
     bottom: 90px;
+  }
+}
+
+/*SOVA*/
+.heroFlexS {
+  grid-column: 1 / 13;
+  background: url(../images/sovaMac.png), url(../images/grid.png), #F15A24;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 53%, 98% 100%, cover;
+  background-position: 73% 35%, center, center;
+  color: #ffffff;
+}
+.backgroundConclusionS {
+  background: url(../images/grid.png), #F15A24;
+  padding-top: 20px;
+  background-size: 98% 100%;
+  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 60px;
+}
+.btnCaseS {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 1em;
+  border: 2px solid white;
+  font-size: 1.6rem;
+  grid-column: 2 / 4;
+  border-color: #ffffff;
+  background: #F15A24;
+  color: #ffffff;
+  border-radius: 9px;
+  padding: 14px 20px;
+}
+.btnCaseS:hover {
+  background: #ffffff;
+  color: #F15A24;
+}
+.overviewS {
+  grid-column: 4 / 10;
+  text-align: center;
+  padding-top: 310px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.flowsS {
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    line-height: 1em;
+    border: 0.5px solid #F15A24;
+    font-size: 1.6rem;
+    grid-column: 2 / 4;
+    background: #F15A24;
+    color: #ffffff;
+    border-radius: 9px;
+    padding: 14px 20px;
+  }
+  .flowsS:hover {
+    background: #F57040;
+    color: #ffffff;
+  }
+  #karlaStyleS {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    padding-bottom: 50px;
+    font-size: 5rem;
+  }
+  #latoStyleS {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding-bottom: 50px;
+    font-size: 5rem;
+  }
+  .karlaTextS {
+    font-family: 'Libre Baskerville', serif;
+  }
+  .latoTextS {
+    font-family: 'Nunito', sans-serif;
+  }
+  #square1S {
+    width: 160px;
+    height: 160px;
+    background: #F15A24;
+    border-radius: 9px;
+    align-items: center;
+  }
+  #square2S {
+    width: 160px;
+    height: 160px;
+    background: #BF271D;
+    border-radius: 9px;
+    align-items: center;
+  }
+  #square4S {
+    width: 160px;
+    height: 160px;
+    background: #121F40;
+    border-radius: 9px;
+    align-items: center;
+  }
+  #square5S {
+    width: 160px;
+    height: 160px;
+    background: #E7E4D8;
+    border-radius: 9px;
+    align-items: center;
+  }
+  #square6S {
+    width: 160px;
+    height: 160px;
+    background: #FEF8E1;
+    border-radius: 9px;
+    align-items: center;
+  }
+  .backgroundConclusionS {
+    background: url(../images/grid.png), #F15A24;
+    padding-top: 20px;
+    background-size: 98% 100%;
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    padding-bottom: 60px;
+  }
+  .prototypeS {
+    width: 185px;
+    height: 50px;
+    text-align: center;
+    line-height: 1em;
+    border: 2px solid white;
+    font-size: 1.6rem;
+    grid-column: 2 / 4;
+    border-color: #ffffff;
+    background: #F15A24;
+    color: #ffffff;
+    border-radius: 9px;
+    padding: 14px 20px;
+    margin-right: 20px;
+  }
+  .prototypeS:hover {
+    background: #ffffff;
+    color: #F15A24;
+  }
+  .heroIntroS {
+    grid-column: 2 / 6;
+    color: #ffffff;
+    padding-top: 55px;
+    padding-left: 10px;
+  }
+  @media screen and (max-width: 1177px) {
+    .overviewS {
+      grid-column: 4 / 10;
+      text-align: center;
+      padding-top: 210px;
+      padding-bottom: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+@media screen and (max-width: 1083px) {
+  #square1S, #square2S, #square3, #square4S, #square5S, #square6S {
+    height: 100px;
+    width: 100px;
+  }
+  .csName {
+    font-size: 1.8rem;
+  }
+  .sHighlight {
+    font-size: 1.8rem;
+  }
+  .overviewS {
+    grid-column: 2 / 12;
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 100px;
+  }
+  #karlaStyleS {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    padding-bottom: 50px;
+    font-size: 3rem;
+  }
+  #latoStyleS {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding-bottom: 50px;
+    font-size: 3rem;
+  }
+}
+.heroFlexS {
+  grid-column: 1 / 11;
+  background: url(../images/sovaMac.png), url(../images/grid.png), #F15A24;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 50%, 98% 100%, cover;
+  background-position: 80% 30%, center, center;
+  color: #ffffff;
+  }
+}
+@media screen and (max-width: 940px) {
+  .heroFlexS {
+    grid-column: 1 / 11;
+    background: url(../images/sovaMac.png), url(../images/grid.png), #F15A24;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 50%, 90% 100%, cover;
+    background-position: 80% 23%, center, center;
+    color: #ffffff;
+  }
+  #square1S, #square2S, #square4S, #square5S, #square6S {
+    height: 100px;
+    width: 100px;
+  }
+  .csName {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .heroFlexS {
+    grid-column: 1 / 11;
+    background: url(../images/sovaMac.png), url(../images/grid.png), #F15A24;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 50%, 90% 100%, cover;
+    background-position: 84% 25%, center, center;
+    color: #ffffff;
+    width: 100vw;
+  }
+  .overviewS {
+    grid-column: 3 / 12;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .heroIntroS {
+    grid-column: 1 / 9;
+    color: #ffffff;
+    padding-top: 170px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .overviewS {
+    grid-column: 1 / 9;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+  #karlaStyleS {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 3rem;
+  }
+  #latoStyleS {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 3rem;
+  }
+  #subtitle {
+    text-align: center;
+  }
+  .heroFlexS {
+    grid-column: 1 / 13;
+    background: url(../images/sovaMac.png), url(../images/grid_mobile.png), #F15A24;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 70%, 90% 100%, cover;
+    background-position: 50% 16%, center, center;
+    color: #ffffff;
+    width: 100vw;
+  }
+  .backgroundConclusionS {
+    background: url(../images/grid_mobile.png), #F15A24;
+    padding-top: 20px;
+    background-size: 98% 100%;
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    padding-bottom: 60px;
   }
 }
