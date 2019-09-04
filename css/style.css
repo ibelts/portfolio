@@ -184,6 +184,10 @@ h5.m6 {
 a:link {
   text-decoration: none;
 }
+.book {
+  color: #D91D1D;
+  text-decoration: underline !important;
+}
 .location {
   font-weight: bolder;
 }
