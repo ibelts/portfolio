@@ -257,6 +257,20 @@ a:link {
   border-radius: 9px;
   padding: 14px 20px;
 }
+button.btnCaseH {
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  line-height: 1em;
+  border: 2px solid white;
+  font-size: 2rem;
+  grid-column: 2 / 4;
+  border-color: #ffffff;
+  background: #007d8a;
+  color: #ffffff;
+  border-radius: 9px;
+  padding: 14px 20px;
+}
 button.btnCaseS {
   width: 181px;
   height: 50px;
@@ -278,6 +292,10 @@ button.btnCaseS {
 .btnCaseS:hover {
   background: #ffffff;
   color: #F15A24;
+}
+.btnCaseH:hover {
+  background: #ffffff;
+  color: #007d8a;
 }
 .uxAbout {
   grid-column: 3 / 11;
@@ -306,6 +324,12 @@ button.btnCaseS {
 }
 #section2a {
   background: url(../images/sovaHome.png), url(../images/grid.png), #F15A24;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 70%, 98%, cover;
+  background-position: right, center, center;
+}
+#section2aa {
+  background: url(../images/docPic.png), url(../images/grid.png), #007d8a;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 70%, 98%, cover;
   background-position: right, center, center;
@@ -343,6 +367,12 @@ body i {
   display: flex;
   height: 150px;
 }
+#shortTitle {
+  display: none;
+}
+#longTitle {
+  display: inline-block;
+}
 @media screen and (max-width: 1390px) {
   .uxAbout {
     padding-left: 0px;
@@ -350,10 +380,22 @@ body i {
   .tabcontent {
     padding-left: 0px;
   }
+  #shortTitle {
+    display: none;
+  }
+  #longTitle {
+    display: inline-block;
+  }
 }
 @media screen and (max-width: 1177px) {
   .wrapperH {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  #shortTitle {
+    display: none;
+  }
+  #longTitle {
+    display: inline-block;
   }
   .whole {
     grid-column: 2 / 12;
@@ -392,6 +434,12 @@ body i {
     margin-right: 30px;
     height: 100%;
   }
+  #shortTitle {
+    display: none;
+  }
+  #longTitle {
+    display: inline-block;
+  }
   .naH {
     padding-top: 20px;
   }
@@ -412,6 +460,12 @@ body i {
   }
   #section2a {
     background: url(../images/sovaHome.png), url(../images/grid_mobile.png), #F15A24;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 70%, 95% 100%, cover;
+    background-position: right, center, center;
+  }
+  #section2aa {
+    background: url(../images/docPic.png), url(../images/grid_mobile.png), #007d8a;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 70%, 95% 100%, cover;
     background-position: right, center, center;
@@ -579,6 +633,12 @@ body i {
   #pp-nav {
     display: none;
   }
+  #shortTitle {
+    display: none;
+  }
+  #longTitle {
+    display: inline-block;
+  }
   #section1 {
     background: url(../images/my_photo_homepage.png), url(../images/grid.png), #ffffff;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -603,6 +663,12 @@ body i {
   }
   #section2a {
     background: url(../images/sovaHome.png), url(../images/grid.png), #F15A24;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 85%, cover, cover;
+    background-position: 50% 25%, center, center;
+  }
+  #section2aa {
+    background: url(../images/docPic.png), url(../images/grid.png), #007d8a;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 85%, cover, cover;
     background-position: 50% 25%, center, center;
@@ -750,6 +816,12 @@ body i {
   .socC {
     grid-column: 1 / 7;
   }
+  #shortTitle {
+    display: none;
+  }
+  #longTitle {
+    display: inline-block;
+  }
 }
 @media screen and (max-width: 416px) {
   .wrapperH {
@@ -786,6 +858,18 @@ body i {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 85%, 90%, cover;
     background-position: 50% 25%, center, center;
+  }
+  #section2aa {
+    background: url(../images/docPic.png), url(../images/grid_mobile.png), #007d8a;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 85%, 90%, cover;
+    background-position: 50% 25%, center, center;
+  }
+  #shortTitle {
+    display: inline-block;
+  }
+  #longTitle {
+    display: none;
   }
   .contain {
     display: flex;
