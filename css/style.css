@@ -271,6 +271,10 @@ button.btnCaseH {
   border-radius: 9px;
   padding: 14px 20px;
 }
+#caseStBtn {
+  width: 162px !important;
+}
+
 button.btnCaseS {
   width: 181px;
   height: 50px;
