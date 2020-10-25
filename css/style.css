@@ -256,9 +256,10 @@ a:link {
   color: #ffffff;
   border-radius: 9px;
   padding: 14px 20px;
+  cursor: pointer;
 }
 button.btnCaseH {
-  width: 160px;
+  width: 178px;
   height: 50px;
   text-align: center;
   line-height: 1em;
@@ -269,10 +270,8 @@ button.btnCaseH {
   background: #007d8a;
   color: #ffffff;
   border-radius: 9px;
-  padding: 14px 20px;
-}
-#caseStBtn {
-  width: 162px !important;
+  padding: 15px 21px;
+  cursor: pointer;
 }
 
 button.btnCaseS {
@@ -288,18 +287,22 @@ button.btnCaseS {
   color: #ffffff;
   border-radius: 9px;
   padding: 14px 20px;
+  cursor: pointer;
 }
 .btnCase:hover {
   background: #ffffff;
   color: #4187C4;
+  cursor: pointer;
 }
 .btnCaseS:hover {
   background: #ffffff;
   color: #F15A24;
+  cursor: pointer;
 }
 .btnCaseH:hover {
   background: #ffffff;
   color: #007d8a;
+  cursor: pointer;
 }
 .uxAbout {
   grid-column: 3 / 11;
@@ -598,6 +601,7 @@ body i {
     color: #ffffff;
     border-radius: 9px;
     padding: 14px 20px;
+    cursor: pointer;
   }
   .whole {
     grid-column: 2 / 7;
